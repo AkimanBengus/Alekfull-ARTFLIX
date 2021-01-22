@@ -1,6 +1,6 @@
 <theme>
 	<formatVersion>4</formatVersion>
-	
+
 	<view name="menu, system, basic, detailed">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
@@ -15,7 +15,7 @@
 			<iconR>./switch/r.png</iconR>
 			<iconStart>./switch/start.png</iconStart>
 			<iconSelect>./switch/select.png</iconSelect>
-		</helpsystem>		
+		</helpsystem>
 	</view>
-	
+
 </theme>

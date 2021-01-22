@@ -1,9 +1,9 @@
 <theme>
-    <formatVersion>4</formatVersion>
+	<formatVersion>4</formatVersion>
 	<include subset="colorset" name="Full HD 1080p">./colorsets/fullhd.xml</include>
 	<include subset="colorset" name="HD 720p">./colorsets/hd.xml</include>
 	<include subset="colorset" name="Lite 540p">./colorsets/lite.xml</include>
-	
+
 	<include subset="iconset" name="standard icons" displayName="${icondef}">./iconsets/default.xml</include>
 	<include subset="iconset" name="SNES">./iconsets/snes.xml</include>
 	<include subset="iconset" name="SNES ALT">./iconsets/snesalt.xml</include>
@@ -19,11 +19,11 @@
 	<include subset="systemview" name="Random Background" displayName="${srandbg}">./systemview/7AC.xml</include>
 	<include subset="systemview" name="Random Background (Logo)" displayName="${srandbgl}">./systemview/7AC2.xml</include>
 	<include subset="systemview" name="Random Video Background" displayName="${svrandvid}">./systemview/7AA.xml</include>
-	<include subset="systemview" name="Random Video Background (Logo)" displayName="${svrandvidl}">./systemview/7AA2.xml</include>	
+	<include subset="systemview" name="Random Video Background (Logo)" displayName="${svrandvidl}">./systemview/7AA2.xml</include>
 	<include subset="systemview" name="Dynamic Background" displayName="${svwheel}">./systemview/7A.xml</include>
 	<include subset="systemview" name="Dynamic Background (Logo)" displayName="${svwheell}">./systemview/7A2.xml</include>
 	<include subset="systemview" name="Custom Background Image" displayName="${scustimg}">./systemview/7AD.xml</include>
 	<include subset="systemview" name="Custom Background Image (Logo)" displayName="${scustimgl}">./systemview/7AD2.xml</include>
 	<include subset="systemview" name="Without Vertical Carousel" displayName="${snocarou}">./systemview/7B.xml</include>
-	
+
 </theme>
