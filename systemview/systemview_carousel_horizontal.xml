@@ -1,0 +1,22 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+
+		<carousel name="systemcarousel">
+			<type>horizontal</type>
+			<pos>-0.332 -0.31</pos>
+			<size>0.01 0.01</size>
+			<origin>0 0</origin>
+			<color>00000000</color>
+			<logoScale>1</logoScale>
+			<logoSize>0.3 0.3</logoSize>
+			<logoAlignment>left</logoAlignment>
+			<maxLogoCount>1</maxLogoCount>
+			<defaultTransition>instant</defaultTransition>
+			<zIndex>50</zIndex>
+		</carousel>
+
+	</view>
+
+</theme>

@@ -1,0 +1,23 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+
+		<text name="info2" extra="true">
+			<fontPath>./../assets/Circular Std Black.ttf</fontPath>
+			<color>FFFFFF</color>
+			<alignment>center</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontSize>0.08</fontSize>
+			<lineSpacing>1</lineSpacing>
+			<pos>0.020 0.065</pos>
+			<size>0.30 0.30</size>
+			<maxSize>0.30 0.30</maxSize>
+			<glowColor>00000016</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>42</zIndex>
+		</text>
+
+	</view>
+
+</theme>

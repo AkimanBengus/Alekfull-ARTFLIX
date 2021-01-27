@@ -12,7 +12,8 @@ Tema proibido para uso comercial
 <theme defaultView="CoinOps Details">
 	<formatVersion>4</formatVersion>
 	<include>./config.xml</include>
-	<include>./$system/custom.xml</include>
+	<include>./systemview/systemview.xml</include>
+	<include>./$system/custom.xml</include>	
 	<include subset="music" name="Mute" displayName="${silence}">./nosounds.xml</include>
 	<include subset="music" name="On" displayName="${sysmusic}">./sounds.xml</include>
 	<include subset="music" name="Off" displayName="${nomusic}"/>
@@ -96,14 +97,14 @@ Tema proibido para uso comercial
 		<carouselViewName>Carrousel</carouselViewName>
 		<carouselDefaultViewName>Carrousel Simple</carouselDefaultViewName>
 		<carouselDetailsViewName>Carrousel Détaillé</carouselDetailsViewName>
-		<carouselposterViewName>Affiche Carrossel</carouselposterViewName>
+		<carouselposterViewName>Carrousel Poster</carouselposterViewName>
 		<hartfdefViewName>Artflix (Vue Standard)</hartfdefViewName>
 		<hspindefViewName>HSpin (Vue Standard)</hspindefViewName>
 		<nflixViewName>NFlix (Statique)</nflixViewName>
 		<hspinadefViewName>CoinOps Standard</hspinadefViewName>
 		<hcoinopsdViewName>CoinOps Detaillé</hcoinopsdViewName>
 		<yes>Oui</yes>
-		<no>Ne Pas</no>
+		<no>Non</no>
 		<none>Aucun</none>
 		<sysmusic>Active</sysmusic>
 		<nomusic>Aleatoire</nomusic>
@@ -124,14 +125,14 @@ Tema proibido para uso comercial
 		<systeview_random_video_logo>Vidéos aleatoires (Logos)</systeview_random_video_logo>
 		<systeview_random_carousel>Carrousel Horizontal</systeview_random_carousel>
 		<subset.systemview>Vues systemes</subset.systemview>
-		<subset.colorset>Images darriere-plan</subset.colorset>
+		<subset.colorset>Images d'arrière-plan</subset.colorset>
 		<subset.iconset>Icones de Menu</subset.iconset>
 		<subset.shader>Shaders de Theme</subset.shader>
 		<subset.music>System Music</subset.music>
-		<subset.MainBGColor>Couleur darriere-plan principale </subset.MainBGColor>
-		<subset.tveffect>Effet decran Vista CoinOps</subset.tveffect>
-		<subset.CoinOpsDefault>Modele darriere-plan Vista CoinOps </subset.CoinOpsDefault>
-		<subset.ShowTopMarquee>Afficher le marquee superieur dans les vues CoinOps</subset.ShowTopMarquee>
+		<subset.MainBGColor>Couleur d'arrière-plan principale </subset.MainBGColor>
+		<subset.tveffect>Effet d'écran Vista CoinOps</subset.tveffect>
+		<subset.CoinOpsDefault>Modèle d'arrière-plan Vista CoinOps </subset.CoinOpsDefault>
+		<subset.ShowTopMarquee>Afficher le marquee supérieur dans les vues CoinOps</subset.ShowTopMarquee>
 	</variables>
 
 
@@ -177,9 +178,6 @@ Tema proibido para uso comercial
 		<subset.CoinOpsDefault>Fondo estandar de CoinOps Vista</subset.CoinOpsDefault>
 		<subset.ShowTopMarquee>Mostrar la marquee superior en las vistas de CoinOps</subset.ShowTopMarquee>
 	</variables>
-
-
-
 
 	<feature supported="carousel">
 		<view name="system">
@@ -249,6 +247,17 @@ Tema proibido para uso comercial
 		</helpsystem>
 	</view>
 
+	<view name="screen">
+		<controllerActivity name="controllerActivity">
+			<pos>0.02 0.025</pos>
+			<size>0.085 0.025</size>
+			<itemSpacing>0.003</itemSpacing>
+			<imagePath>./_inc/gamepad.svg</imagePath>
+			<color>FFFFFF80</color>
+			<activityColor>A0A0FFC0</activityColor>
+			<hotkeyColor>FFA0A0C0</hotkeyColor>
+		</controllerActivity>
+	</view>
 
 	<view name="grid">
 		<image name="logo">
@@ -273,17 +282,11 @@ Tema proibido para uso comercial
 			<textColor>FFFFFF</textColor>
 		</helpsystem>
 
-		<image name="md_image">
-			<tile>true</tile>
-			<pos>0 0</pos>
-			<origin>0 0</origin>
-			<size>1 1</size>
-			<zIndex>0</zIndex>
-		</image>
 		<image name="art" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
+			<path>./assets/arts/default.jpg</path>
 			<path>./assets/arts/$system.jpg</path>
 			<zIndex>2</zIndex>
 		</image>
@@ -389,35 +392,6 @@ Tema proibido para uso comercial
 			<zIndex>42</zIndex>
 		</text>
 
-		<text name="info6" extra="true">
-			<text>Idioma Selecionado: PT(BR)</text>
-		</text>
-		<text name="info6" extra="true" region="PTBR">
-			<text>Idioma Selecionado: PT(BR)</text>
-		</text>
-		<text name="info6" extra="true" region="EN">
-			<text>Selected Language: EN(US)</text>
-		</text>
-		<text name="info6" extra="true" region="ES">
-			<text>Idioma Seleccionado: ES</text>
-		</text>
-		<text name="info6" extra="true" region="FR">
-			<text>Langue Choisie: FR</text>
-		</text>
-
-		<text name="info6" extra="true">
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
-			<color>9b9b9b</color>
-			<alignment>left</alignment>
-			<fontSize>0.0147</fontSize>
-			<lineSpacing>1</lineSpacing>
-			<size>0.35 0</size>
-			<pos>0.104 0.076</pos>
-			<glowColor>00000016</glowColor>
-			<glowSize>0.6</glowSize>
-			<zIndex>42</zIndex>
-		</text>
-
 		<text name="md_lbl_developer">
 			<fontPath>./assets/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
@@ -430,34 +404,6 @@ Tema proibido para uso comercial
 			<glowSize>1</glowSize>
 			<zIndex>42</zIndex>
 			<forceUppercase>true</forceUppercase>
-		</text>
-
-		<text name="playbutton" extra="true">
-			<text>JOGAR AGORA</text>
-		</text>
-		<text name="playbutton" extra="true" region="PTBR">
-			<text>JOGAR AGORA</text>
-		</text>
-		<text name="playbutton" extra="true" region="EN">
-			<text>PLAY NOW</text>
-		</text>
-		<text name="playbutton" extra="true" region="ES">
-			<text>JUGAR AHORA</text>
-		</text>
-		<text name="playbutton" extra="true" region="FR">
-			<text>LISTE DES JEUX</text>
-		</text>
-
-		<text name="playbutton" extra="true">
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
-			<color>FFFFFF</color>
-			<alignment>center</alignment>
-			<fontSize>0.0142</fontSize>
-			<size>0.35 0</size>
-			<pos>-0.108 0.5315</pos>
-			<glowColor>00000016</glowColor>
-			<glowSize>0.8</glowSize>
-			<zIndex>42</zIndex>
 		</text>
 
 		<datetime name="md_releasedate">
@@ -501,7 +447,7 @@ Tema proibido para uso comercial
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<path>./assets/overlay1222.png</path>
+			<path>./assets/overlaySystemData.png</path>
 			<zIndex>6</zIndex>
 		</image>
 
@@ -596,7 +542,6 @@ Tema proibido para uso comercial
 			<centerSelection>true</centerSelection>
 			<scrollLoop>true</scrollLoop>
 			<imageSource>marquee</imageSource>
-
 		</imagegrid>
 		<gridtile name="default">
 			<padding>64 16</padding>
@@ -702,7 +647,6 @@ Tema proibido para uso comercial
 			<centerSelection>true</centerSelection>
 			<scrollLoop>true</scrollLoop>
 			<imageSource>marquee</imageSource>
-
 		</imagegrid>
 		<gridtile name="default">
 			<padding>64 16</padding>
@@ -982,7 +926,6 @@ Tema proibido para uso comercial
 			<imageSource>marquee</imageSource>
 			<zIndex>6</zIndex>
 		</imagegrid>
-
 		<gridtile name="default">
 			<padding>64 16</padding>
 			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>

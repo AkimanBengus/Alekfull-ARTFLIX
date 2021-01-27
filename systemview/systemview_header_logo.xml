@@ -1,0 +1,19 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+
+		<image name="logoHeader" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.17 0.215</pos>
+			<maxSize>0.30 0.30</maxSize>
+			<zIndex>42</zIndex>
+		</image>
+
+		<text name="info2" extra="true">
+			<visible>false</visible>
+		</text>
+
+	</view>
+
+</theme>

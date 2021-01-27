@@ -13,8 +13,4 @@
 	<include subset="iconset" name="Xbox One">./iconsets/xboxone.xml</include>
 	<include subset="iconset" name="Switch">./iconsets/switch.xml</include>
 
-	<include subset="systemview" name="Random Videos" displayName="${systeview_random_video}">./systemview/systeview_random_video.xml</include>
-	<include subset="systemview" name="Random Videos (Logo)" displayName="${systeview_random_video_logo}">./systemview/systeview_random_video_logo.xml</include>
-	<include subset="systemview" name="Without Vertical Carousel" displayName="${systeview_random_carousel}">./systemview/systeview_random_carousel.xml</include>
-
 </theme>
