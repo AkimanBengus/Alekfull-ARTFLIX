@@ -3,46 +3,51 @@
 
 
 	<view name="system">
-		<image name="art" extra="true">
+		<image name="backgroundSystem" extra="true">
+			<path>./../assets/arts/default.jpg</path>
 			<path>./../assets/arts/720/$system.jpg</path>
 		</image>
 	</view>
 
 	<view name="grid">
-		<image name="art4" extra="true">
+		<image name="backgroundGameList" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
+			<path>./../assets/arts/default.jpg</path>
 			<path>./../assets/arts/720/$system.jpg</path>
 			<zIndex>4</zIndex>
 		</image>
 	</view>
 
 	<customView name="Carousel">
-		<image name="art4" extra="true">
+		<image name="backgroundGameList" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
+			<path>./../assets/arts/default.jpg</path>
 			<path>./../assets/arts/720/$system.jpg</path>
 			<zIndex>4</zIndex>
 		</image>
 	</customView>
 
 	<customView name="Carousel Default">
-		<image name="art4" extra="true">
+		<image name="backgroundGameList" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
+			<path>./../assets/arts/default.jpg</path>
 			<path>./../assets/arts/720/$system.jpg</path>
 			<zIndex>4</zIndex>
 		</image>
 	</customView>
 
 	<customView name="Carousel + Details">
-		<image name="art4" extra="true">
+		<image name="backgroundGameList" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
+			<path>./../assets/arts/default.jpg</path>
 			<path>./../assets/arts/720/$system.jpg</path>
 			<zIndex>4</zIndex>
 		</image>

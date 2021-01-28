@@ -10,7 +10,7 @@
 			<zIndex>42</zIndex>
 		</image>
 
-		<text name="info2" extra="true">
+		<text name="mdex_systemName" extra="true">
 			<visible>false</visible>
 		</text>
 

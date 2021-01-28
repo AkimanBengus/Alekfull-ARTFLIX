@@ -3,7 +3,7 @@
 
 	<view name="system">
 
-		<text name="info2" extra="true">
+		<text name="mdex_systemName" extra="true">
 			<fontPath>./../assets/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
@@ -18,6 +18,10 @@
 			<zIndex>42</zIndex>
 		</text>
 
-	</view>
+		<image name="logoHeader" extra="true">
+			<visible>false</visible>
+		</image>
 
+	</view>
+	
 </theme>

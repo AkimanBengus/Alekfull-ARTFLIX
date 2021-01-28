@@ -14,33 +14,40 @@
 	</variables>
 
 	<view name="system">
-
-		<image name="art" extra="true">
+ 
+		<image name="backgroundSystem" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<origin>0 0</origin>
 		</image>
 
-		<image name="background" extra="true">
+		<image name="backgroundOverlay" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<path>./../assets/overlaySystemData.png</path>
+			<path>./../assets/backgroundOverlayLeftShadow.png</path>
 			<zIndex>41</zIndex>
 		</image>
 
 		<image name="logo">
-			<!-- try svg -->
-			<path>./../assets/logos/$system.png</path>
 			<!-- try png -->
-			<path>./../assets/logos/$system2.png</path>
+			<path>./../assets/logos/$system.png</path>
+			<!-- try svg -->
+			<path>./../assets/logos/$system.svg</path>
+			<!-- check if lang resources exist -->
+			<path>./../assets/logos/${system.theme}-${lang}.png</path>
+			<path>./../assets/logos/${system.theme}-${lang}.svg</path>
 		</image>
 
-		<image name="logoHeader">
-			<!-- try svg -->
-			<path>./../assets/logos/$system.png</path>
+		<image name="logoHeader" extra="true">
+			<!-- <visible>false</visible> -->
 			<!-- try png -->
-			<path>./../assets/logos/$system2.png</path>
+			<path>./../assets/logos/$system.png</path>
+			<!-- try svg -->
+			<path>./../assets/logos/$system.svg</path>
+			<!-- check if lang resources exist -->
+			<path>./../assets/logos/${system.theme}-${lang}.png</path>
+			<path>./../assets/logos/${system.theme}-${lang}.svg</path>
 		</image>
 
 		<text name="logoText">
@@ -54,7 +61,7 @@
 			<forceUppercase>true</forceUppercase >
     	</text>
 
-		<text name="info3" extra="true">
+		<text name="mdex_systemYear" extra="true">
 			<fontPath>./../assets/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
@@ -67,8 +74,20 @@
 			<zIndex>42</zIndex>
 		</text>
 
+		<text name="mdex_systemCreatorType" extra="true">
+			<fontPath>./../assets/Circular Std Black.ttf</fontPath>
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<fontSize>0.023</fontSize>
+			<lineSpacing>1</lineSpacing>
+			<pos>0.078 0.378</pos>
+			<size>0.35 0</size>
+			<glowColor>00000016</glowColor>
+			<glowSize>1</glowSize>
+			<zIndex>42</zIndex>
+		</text>
 
-		<text name="info4" extra="true">
+		<text name="mdex_systemCreator" extra="true">
 			<fontPath>./../assets/Circular Std Book.ttf</fontPath>
 			<color>5c5b5c</color>
 			<alignment>left</alignment>
@@ -81,7 +100,7 @@
 			<zIndex>42</zIndex>
 		</text>
 
-		<text name="info1" extra="true">
+		<text name="mdex_systemDescription" extra="true">
 			<fontPath>./../assets/Circular Std Book.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
@@ -132,37 +151,24 @@
 		</helpsystem>
 
 
-		<text name="info5" extra="true">
+		<text name="mdex_systemCreatorType" extra="true">
 			<text>FABRICANTE:</text>
 		</text>
 
-		<text name="info5" extra="true" region="PTBR">
+		<text name="mdex_systemCreatorType" extra="true" region="PTBR">
 			<text>FABRICANTE:</text>
 		</text>
 
-		<text name="info5" extra="true" region="EN">
+		<text name="mdex_systemCreatorType" extra="true" region="EN">
 			<text>MANUFACTURER:</text>
 		</text>
 
-		<text name="info5" extra="true" region="ES">
+		<text name="mdex_systemCreatorType" extra="true" region="ES">
 			<text>FABRICANTE:</text>
 		</text>
 
-		<text name="info5" extra="true" region="FR">
+		<text name="mdex_systemCreatorType" extra="true" region="FR">
 			<text>FABRICANT:</text>
-		</text>
-
-		<text name="info5" extra="true">
-			<fontPath>./../assets/Circular Std Black.ttf</fontPath>
-			<color>FFFFFF</color>
-			<alignment>left</alignment>
-			<fontSize>0.023</fontSize>
-			<lineSpacing>1</lineSpacing>
-			<pos>0.078 0.378</pos>
-			<size>0.35 0</size>
-			<glowColor>00000016</glowColor>
-			<glowSize>1</glowSize>
-			<zIndex>42</zIndex>
 		</text>
 
 	</view>

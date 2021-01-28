@@ -3,7 +3,8 @@
 
 
 	<view name="system">
-		<image name="art" extra="true">
+		<image name="backgroundSystem" extra="true">
+			<path>./../assets/arts/default.jpg</path>
 			<path>./../assets/arts/$system.jpg</path>
 		</image>
 	</view>
