@@ -13,7 +13,7 @@ Tema proibido para uso comercial
 	<formatVersion>4</formatVersion>
 	<include>./config.xml</include>
 	<include>./systemview/systemview.xml</include>
-	<include>./$system/custom.xml</include>
+	<include>./metadata_ex/$system/custom.xml</include>
 	<include subset="music" name="Mute" displayName="${silence}">./nosounds.xml</include>
 	<include subset="music" name="On" displayName="${sysmusic}">./sounds.xml</include>
 	<include subset="music" name="Off" displayName="${nomusic}"/>

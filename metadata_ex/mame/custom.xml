@@ -1,0 +1,54 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="mdex_systemDescription" extra="true">
+			<text>MAME significa Multiple Arcade Machine Emulator - Emulador de Múltiplas Máquinas de Arcade, em português. O MAME irá reproduzir, mais ou menos fielmente, o jogo em sua máquina.</text>
+		</text>
+
+		<text name="mdex_systemDescription" extra="true" region="PTBR">
+			<text>MAME significa Multiple Arcade Machine Emulator - Emulador de Múltiplas Máquinas de Arcade, em português. O MAME irá reproduzir, mais ou menos fielmente, o jogo em sua máquina.</text>
+		</text>
+
+		<text name="mdex_systemDescription" extra="true" region="EN">
+			<text>Multiple Arcade Machine Emulator is a free and open source emulator designed to recreate the hardware of arcade game systems in software on modern personal computers and other platforms.</text>
+		</text>
+
+		<text name="mdex_systemDescription" extra="true" region="ES">
+			<text>Multiple Arcade Machine Emulator es un emulador de código abierto y gratuito diseñado para recrear el hardware de los sistemas de juegos de arcade en software en computadoras personales modernas y otras plataformas.</text>
+		</text>
+
+		<text name="mdex_systemDescription" extra="true" region="FR">
+			<text>Multiple Arcade Machine Emulator, est un logiciel d'émulation pour PC dont le but est de reproduire fidèlement le fonctionnement des jeux et des systèmes d'arcade afin de préserver l'histoire du jeu vidéo.</text>
+		</text>
+
+		<text name="mdex_systemName" extra="true">
+			<text>M.A.M.E.</text>
+		</text>
+
+		<text name="mdex_systemYear" extra="true">
+			<text>1997</text>
+		</text>
+
+		<text name="mdex_systemCreator" extra="true">
+			<text>Nicola Salmoria</text>
+		</text>
+
+		<text name="mdex_systemCreatorType" extra="true">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+
+		<text name="mdex_systemCreatorType" extra="true"  region="PTBR">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+		<text name="mdex_systemCreatorType" extra="true" region="EN">
+			<text>DEVELOPER:</text>
+		</text>
+		<text name="mdex_systemCreatorType" extra="true" region="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+		<text name="mdex_systemCreatorType" extra="true" region="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+	</view>
+</theme>
