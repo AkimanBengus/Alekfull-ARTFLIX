@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="phosphore" extra="true">
+		<image name="crt" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<path>./scanvert.png</path>
+			<path>./scanlinesLight.png</path>
+			<color>FFFFFF60</color>
 			<tile>true</tile>
 		</image>
 	</view>

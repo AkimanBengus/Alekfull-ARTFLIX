@@ -4,7 +4,7 @@
 	<view name="system">
 
 		<text name="mdex_systemName" extra="true">
-			<fontPath>./../assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./../fonts/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
 			<verticalAlignment>center</verticalAlignment>

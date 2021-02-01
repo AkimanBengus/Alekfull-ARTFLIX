@@ -1,18 +1,6 @@
 <theme>
 	<formatVersion>4</formatVersion>
 
-	<include subset="HeaderStyle" name="System Logo" displayName="System Logo">./systemview_header_logo.xml</include>
-	<include subset="HeaderStyle" name="System Name" displayName="System Name">./systemview_header_text.xml</include>
-
-	<include subset="CarouselStyle" name="Horizontal" displayName="Horizontal">./systemview_carousel_horizontal.xml</include>
-	<include subset="CarouselStyle" name="Vertical" displayName="Vertical">./systemview_carousel_vertical.xml</include>
-	<include subset="CarouselStyle" name="Vertical Wheel" displayName="Vertical Wheel">./systemview_carousel_vertical_wheel.xml</include>
-
-	<variables>
-		<subset.HeaderStyle>Header Style</subset.HeaderStyle>
-		<subset.CarouselStyle>Carousel Style</subset.CarouselStyle>
-	</variables>
-
 	<view name="system">
  
 		<image name="backgroundSystem" extra="true">
@@ -27,6 +15,14 @@
 			<size>1 1</size>
 			<path>./../assets/backgroundOverlayLeftShadow.png</path>
 			<zIndex>41</zIndex>
+		</image>
+
+		<image name="backgroundOverlayButton" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./../assets/backgroundOverlayTotalGamesButton.png</path>
+			<zIndex>42</zIndex>
 		</image>
 
 		<image name="logo">
@@ -51,7 +47,7 @@
 		</image>
 
 		<text name="logoText">
-			<fontPath>./../assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./../fonts/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
 			<fontSize>0.08</fontSize>
@@ -62,7 +58,7 @@
     	</text>
 
 		<text name="mdex_systemYear" extra="true">
-			<fontPath>./../assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./../fonts/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
@@ -75,7 +71,7 @@
 		</text>
 
 		<text name="mdex_systemCreatorType" extra="true">
-			<fontPath>./../assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./../fonts/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
@@ -88,7 +84,7 @@
 		</text>
 
 		<text name="mdex_systemCreator" extra="true">
-			<fontPath>./../assets/Circular Std Book.ttf</fontPath>
+			<fontPath>./../fonts/Circular Std Book.ttf</fontPath>
 			<color>5c5b5c</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
@@ -101,7 +97,7 @@
 		</text>
 
 		<text name="mdex_systemDescription" extra="true">
-			<fontPath>./../assets/Circular Std Book.ttf</fontPath>
+			<fontPath>./../fonts/Circular Std Book.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
@@ -115,7 +111,7 @@
 
 		<text name="binding_totalGames" extra="true">
 			<text>{binding:total} Jeux</text>
-			<fontPath>./../assets/Circular Std Book.ttf</fontPath>
+			<fontPath>./../fonts/Circular Std Book.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
 			<fontSize>0.018</fontSize>
@@ -142,14 +138,6 @@
 		<text name="systemInfo">
 			<visible>false</visible>
 		</text>
-
-		<helpsystem name="help">
-			<fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
-			<fontSize>0.017</fontSize>
-			<pos>0.02 0.955</pos>
-			<textColor>FFFFFF</textColor>
-		</helpsystem>
-
 
 		<text name="mdex_systemCreatorType" extra="true">
 			<text>FABRICANTE:</text>

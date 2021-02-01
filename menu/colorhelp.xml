@@ -1,0 +1,10 @@
+﻿<theme>
+  <formatVersion>7</formatVersion>
+
+  <customView name="system, grid, Carousel, Icons">
+    <helpsystem name="help">
+      <iconColor>${baseColor}</iconColor>
+    </helpsystem>
+  </customView>
+
+</theme>

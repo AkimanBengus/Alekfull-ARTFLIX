@@ -10,50 +10,108 @@ Tema proibido para uso comercial
 
 <?xml version="1.0" encoding="UTF-8"?>
 <theme defaultView="CoinOps Details">
-	<formatVersion>4</formatVersion>
-	<include>./config.xml</include>
+	<formatVersion>7</formatVersion>
 	<include>./systemview/systemview.xml</include>
 	<include>./metadata_ex/$system/custom.xml</include>
+
+	<!-- To Translate -->
+	<include subset="screenType" name="Full HD 1080p">./systemview/screenTypeFullHD.xml</include>
+	<include subset="screenType" name="HD 720p">./systemview/screenTypeHD.xml</include>
+	<include subset="screenType" name="Lite 540p">./systemview/screenTypeLite.xml</include>
+
+	<include subset="carouselStyle" name="Horizontal" displayName="Horizontal">./systemview/systemview_carousel_horizontal.xml</include>
+	<include subset="carouselStyle" name="Vertical" displayName="Vertical">./systemview/systemview_carousel_vertical.xml</include>
+	<include subset="carouselStyle" name="Vertical Wheel" displayName="Vertical Wheel">./systemview/systemview_carousel_vertical_wheel.xml</include>
+	
+	<include subset="headerStyle" name="System Logo" displayName="System Logo">./systemview/systemview_header_logo.xml</include>
+	<include subset="headerStyle" name="System Name" displayName="System Name">./systemview/systemview_header_text.xml</include>
+
 	<include subset="music" name="Mute" displayName="${silence}">./nosounds.xml</include>
 	<include subset="music" name="On" displayName="${sysmusic}">./sounds.xml</include>
 	<include subset="music" name="Off" displayName="${nomusic}"/>
-	<include subset="MainBGColor" name="Default" displayName="${default}"/>
-	<include subset="MainBGColor" name="Green" displayName="${huegreen}">./colorsets/green.xml</include>
-	<include subset="MainBGColor" name="Red" displayName="${huered}">./colorsets/red.xml</include>
-	<include subset="MainBGColor" name="Blue" displayName="${hueblue}">./colorsets/blue.xml</include>
-	<include subset="MainBGColor" name="Purple" displayName="${huepurple}">./colorsets/purple.xml</include>
+
+	<include subset="mainBackgroundColor" name="Gray" displayName="${gray}"/>
+	<include subset="mainBackgroundColor" name="Green" displayName="${green}">./background_colors/green.xml</include>
+	<include subset="mainBackgroundColor" name="Red" displayName="${red}">./background_colors/red.xml</include>
+	<include subset="mainBackgroundColor" name="Blue" displayName="${blue}">./background_colors/blue.xml</include>
+	<include subset="mainBackgroundColor" name="Purple" displayName="${purple}">./background_colors/purple.xml</include>
+
 	<include subset="shader" name="None" displayName="${none}"/>
-	<include subset="shader" name="ScanLines">./effects/scanliness.xml</include>
-	<include subset="shader" name="Crt">./effects/crtt.xml</include>
+	<include subset="shader" name="CRT">./effects/crtSystem.xml</include>
+	<include subset="shader" name="CRT Full Screen" displayName="${shaderCrtFullScreen}">./effects/crtScreen.xml</include>
 	<include subset="shader" name="Phosphore">./effects/phosphore.xml</include>
-	<include subset="shader" name="Scanlines Alternative" displayName="${scanalt}">./effects/scanliness.xml</include>
 	<include subset="shader" name="Phosphore +">./effects/phosplus.xml</include>
-	<include subset="shader" name="Vertical Scanlines">./effects/scanvert.xml</include>
-	<include subset="shader" name="Vertical Fine">./effects/verticalfine.xml</include>
-	<include subset="shader" name="Crt Full Screen" displayName="${scrtfs}">./effects/crt.xml</include>
-	<include subset="shader" name="ScanLines Full Screen" displayName="${sclfs}">./effects/scanlines.xml</include>
-	<include subset="shader" name="VHS Glitch (Heavy)" displayName="${svhsgl}">./effects/vhs.xml</include>
-	<include subset="shader" name="CRT Glitch (Heavy)" displayName="${scrtgl}">./effects/crtvideo.xml</include>
-	<include subset="tveffect" name="None" displayName="${none}" appliesTo="HCoinSpin,CoinOps Details"/>
-	<include subset="tveffect" name="Glitch" appliesTo="HCoinSpin,CoinOps Details">./effects/vhscoin.xml</include>
-	<include subset="tveffect" name="CRT" appliesTo="HCoinSpin,CoinOps Details">./effects/crtcoin.xml</include>
-	<include subset="ShowTopMarquee" name="Yes" displayName="${yes}" appliesTo="HCoinSpin,CoinOps Details">./colorsets/wmarquee.xml</include>
-	<include subset="ShowTopMarquee" name="No" displayName="${no}" appliesTo="HCoinSpin,CoinOps Details">./colorsets/nmarquee.xml</include>
-	<include subset="CoinOpsDefault" name="Default" displayName="${default}" appliesTo="HCoinSpin,CoinOps Details">./colorsets/coinops.xml</include>
-	<include subset="CoinOpsDefault" name="TV Only" displayName="${copstv}" appliesTo="HCoinSpin,CoinOps Details">./colorsets/tv.xml</include>
-	<include subset="CoinOpsDefault" name="Arcade Only" displayName="${copsarc}" appliesTo="HCoinSpin,CoinOps Details">./colorsets/arcade.xml</include>
+	<include subset="shader" name="ScanLines">./effects/scanlinesSystem.xml</include>
+	<include subset="shader" name="ScanLines Full Screen" displayName="${shaderScanlinesFullScreen}">./effects/scanlinesScreen.xml</include>
+	<include subset="shader" name="Scanlines Light" displayName="${shaderScanlinesLight}">./effects/scanlinesLight.xml</include>
+	<include subset="shader" name="Scanlines Vertical">./effects/scanlinesVertical.xml</include>
+	<include subset="shader" name="Scanlines Vertical Light">./effects/scanlinesVerticalLight.xml</include>
+	<include subset="shader" name="CRT Glitch (Heavy)" displayName="${shaderCrtGlitch}">./effects/crtvideo.xml</include>
+	<include subset="shader" name="VHS Glitch (Heavy)" displayName="${shaderVhsGlich}">./effects/vhs.xml</include>
+
+	<include subset="tveffect" name="None" displayName="${none}" appliesTo="HCoinSpin, CoinOps Details"/>
+	<include subset="tveffect" name="Glitch" appliesTo="HCoinSpin, CoinOps Details">./effects/vhsCoin.xml</include>
+	<include subset="tveffect" name="CRT" appliesTo="HCoinSpin, CoinOps Details">./effects/crtCoin.xml</include>
+
+	<include subset="showTopMarquee" name="Yes" displayName="${yes}" appliesTo="HCoinSpin, CoinOps Details">./view_options/wmarquee.xml</include>
+	<include subset="showTopMarquee" name="No" displayName="${no}" appliesTo="HCoinSpin, CoinOps Details">./view_options/nmarquee.xml</include>
+
+	<include subset="coinOpsDefault" name="Default" displayName="${default}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOps.xml</include>
+	<include subset="coinOpsDefault" name="TV Only" displayName="${coinOpsTV}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOpsTV.xml</include>
+	<include subset="coinOpsDefault" name="Arcade Only" displayName="${coinOpsArcade}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOpsArcade.xml</include>
+
+	<!-- Subset options for color  -->
+	<include subset="colorset" name="Red" displayName="${red}"/>
+	<include subset="colorset" name="Blue" displayName="${blue}">./menu/colors/blue.xml</include>
+	<include subset="colorset" name="Green" displayName="${green}">./menu/colors/green.xml</include>
+	<include subset="colorset" name="Cyan">./menu/colors/cyan.xml</include>
+	<include subset="colorset" name="Yellow" displayName="${yellow}">./menu/colors/yellow.xml</include>
+	<include subset="colorset" name="Violet">./menu/colors/violet.xml</include>
+	<include subset="colorset" name="Orange">./menu/colors/orange.xml</include>
+	<include subset="colorset" name="Gray" displayName="${gray}">./menu/colors/gray.xml</include>
+
 	<variables>
-		<subset.MainBGColor>Main Background Color</subset.MainBGColor>
-		<subset.CoinOpsDefault>CoinOps Default System</subset.CoinOpsDefault>
+		<subset.mainBackgroundColor>Main Background Color</subset.mainBackgroundColor>
+		<subset.coinOpsDefault>CoinOps Default System</subset.coinOpsDefault>
 		<subset.tveffect>TV Effect CoinOps View</subset.tveffect>
-		<subset.ShowTopMarquee>Show Top Marquee in CoinOps Views</subset.ShowTopMarquee>
+		<subset.showTopMarquee>Show Top Marquee in CoinOps Views</subset.showTopMarquee>
+		<subset.screenType>Screen Type</subset.screenType>
+		<subset.headerStyle>Header Style</subset.headerStyle>
+		<subset.carouselStyle>Carousel Style</subset.carouselStyle>
+		<subset.colorset>Menu Color</subset.colorset>
+	</variables>
+
+	<variables>
+		<baseColor>8b0000</baseColor>
+		<gradientEndColor>6b2020</gradientEndColor>
+		<centerFadeColor>8b000050</centerFadeColor>
+		<backgroundColor>200000</backgroundColor>
+		<bottomBarColor>8b0000c0</bottomBarColor>
+		<glowColor>Ab000020</glowColor>
+		<systemInfoColor>DDDDDDD8</systemInfoColor>
+		<groupColor>BD4747</groupColor>
+		<groupSeparatorColor>BD4747</groupSeparatorColor>
+		<backgroundImage>./art/fiber.png</backgroundImage>
+	</variables>
+	
+	<variables>
+		<helpSubsetName>Help icons</helpSubsetName>
+		<colored>Colored</colored>
+		<subset.colorset>Colorset</subset.colorset>
+	</variables>
+
+	<!-- French -->
+	<variables lang="fr">
+		<helpSubsetName>Icônes d'aide</helpSubsetName>
+		<colored>Colorés</colored>
+		<subset.colorset>Jeux de couleurs</subset.colorset>
 	</variables>
 
 	<variables lang="pt">
 		<carouselViewName>Carrossel</carouselViewName>
 		<carouselDefaultViewName>Carrossel Simples</carouselDefaultViewName>
 		<carouselDetailsViewName>Carrossel Detalhado</carouselDetailsViewName>
-		<carouselposterViewName>Carrossel Poster</carouselposterViewName>
+		<carouselPosterViewName>Carrossel Poster</carouselPosterViewName>
 		<hartfdefViewName>Artflix (Vista Padrao)</hartfdefViewName>
 		<hspindefViewName>HSpin (Vista Padrao)</hspindefViewName>
 		<nflixViewName>NFlix (Estatico)</nflixViewName>
@@ -66,30 +124,31 @@ Tema proibido para uso comercial
 		<nomusic>Aleatorias</nomusic>
 		<silence>Sem Musicas de Fundo</silence>
 		<default>Padrao</default>
-		<huegreen>Verde</huegreen>
-		<huered>Vermelho</huered>
-		<hueblue>Azul</hueblue>
-		<huepurple>Roxo</huepurple>
-		<icondef>Icones Padrao</icondef>
-		<copstv>Somente TV</copstv>
-		<copsarc>Somente Fliperama</copsarc>
-		<svhsgl>VHS Glitch (Pesado)</svhsgl>
-		<scrtgl>CRT Glitch (Pesado)</scrtgl>
-		<scrtfs>CRT Tela Cheia</scrtfs>
-		<sclfs>Scanlines Tela Cheia</sclfs>
-		<scanalt>Scanlines Alternativo</scanalt>
+		<green>Verde</green>
+		<red>Vermelho</red>
+		<blue>Azul</blue>
+		<purple>Roxo</purple>
+		<yellow>Amarelo</yellow>
+		<gray>Cinzento</gray>
+		<iconDefault>Icones Padrao</iconDefault>
+		<coinOpsTV>Somente TV</coinOpsTV>
+		<coinOpsArcade>Somente Fliperama</coinOpsArcade>
+		<shaderVhsGlich>VHS Glitch (Pesado)</shaderVhsGlich>
+		<shaderCrtGlitch>CRT Glitch (Pesado)</shaderCrtGlitch>
+		<shaderCrtFullScreen>CRT Tela Cheia</shaderCrtFullScreen>
+		<shaderScanlinesFullScreen>Scanlines Tela Cheia</shaderScanlinesFullScreen>
+		<shaderScanlinesLight>Scanlines Alternativo</shaderScanlinesLight>
 		<systeview_random_video>Videos Aleatorios</systeview_random_video>
 		<systeview_random_video_logo>Videos Aleatorios (Logos)</systeview_random_video_logo>
 		<systeview_random_carousel>Horizontal Carrossel</systeview_random_carousel>
 		<subset.systemview>Vistas de Sistemas</subset.systemview>
-		<subset.colorset>Imagens de Fundo</subset.colorset>
 		<subset.iconset>Icones do Menu</subset.iconset>
 		<subset.shader>Shaders do Tema</subset.shader>
 		<subset.music>Musicas dos Sistemas</subset.music>
-		<subset.MainBGColor>Cor do Fundo Principal</subset.MainBGColor>
+		<subset.mainBackgroundColor>Cor do Fundo Principal</subset.mainBackgroundColor>
 		<subset.tveffect>Efeito da Tela Vista CoinOps</subset.tveffect>
-		<subset.CoinOpsDefault>Fundo Padrao Vista CoinOps</subset.CoinOpsDefault>
-		<subset.ShowTopMarquee>Mostrar Marquee Superior nas Vistas CoinOps</subset.ShowTopMarquee>
+		<subset.coinOpsDefault>Fundo Padrao Vista CoinOps</subset.coinOpsDefault>
+		<subset.showTopMarquee>Mostrar Marquee Superior nas Vistas CoinOps</subset.showTopMarquee>
 	</variables>
 
 
@@ -97,7 +156,7 @@ Tema proibido para uso comercial
 		<carouselViewName>Carrousel</carouselViewName>
 		<carouselDefaultViewName>Carrousel Simple</carouselDefaultViewName>
 		<carouselDetailsViewName>Carrousel Détaillé</carouselDetailsViewName>
-		<carouselposterViewName>Carrousel Poster</carouselposterViewName>
+		<carouselPosterViewName>Carrousel Poster</carouselPosterViewName>
 		<hartfdefViewName>Artflix (Vue Standard)</hartfdefViewName>
 		<hspindefViewName>HSpin (Vue Standard)</hspindefViewName>
 		<nflixViewName>NFlix (Statique)</nflixViewName>
@@ -107,32 +166,33 @@ Tema proibido para uso comercial
 		<no>Non</no>
 		<none>Aucun</none>
 		<sysmusic>Active</sysmusic>
-		<nomusic>Aleatoire</nomusic>
+		<nomusic>Aléatoire</nomusic>
 		<silence>Sans musique de fond</silence>
 		<default>Standard</default>
-		<huegreen>Vert</huegreen>
-		<huered>Rouge</huered>
-		<hueblue>Bleu</hueblue>
-		<huepurple>Violet</huepurple>
-		<icondef>Icones standard</icondef>
-		<copstv>TV Uniquement</copstv>
-		<copsarc>Arcade uniquement</copsarc>
-		<svhsgl>VHS Glitch (lourd)</svhsgl>
-		<scrtgl>CRT Glitch (lourd)</scrtgl>
-		<scrtfs>CRT plein ecran</scrtfs>
-		<sclfs>Scanlines plein ecran</sclfs>
-		<systeview_random_video>Vidéos aleatoires</systeview_random_video>
-		<systeview_random_video_logo>Vidéos aleatoires (Logos)</systeview_random_video_logo>
+		<green>Vert</green>
+		<red>Rouge</red>
+		<blue>Bleu</blue>
+		<purple>Violet</purple>
+		<yellow>Jaune</yellow>
+		<gray>Gris</gray>
+		<iconDefault>Icônes standard</iconDefault>
+		<coinOpsTV>TV uniquement</coinOpsTV>
+		<coinOpsArcade>Arcade uniquement</coinOpsArcade>
+		<shaderVhsGlich>VHS Glitch (lourd)</shaderVhsGlich>
+		<shaderCrtGlitch>CRT Glitch (lourd)</shaderCrtGlitch>
+		<shaderCrtFullScreen>CRT plein écran</shaderCrtFullScreen>
+		<shaderScanlinesFullScreen>Scanlines plein écran</shaderScanlinesFullScreen>
+		<systeview_random_video>Vidéos aléatoires</systeview_random_video>
+		<systeview_random_video_logo>Vidéos aléatoires (Logos)</systeview_random_video_logo>
 		<systeview_random_carousel>Carrousel Horizontal</systeview_random_carousel>
 		<subset.systemview>Vues systemes</subset.systemview>
-		<subset.colorset>Images d'arrière-plan</subset.colorset>
-		<subset.iconset>Icones de Menu</subset.iconset>
-		<subset.shader>Shaders de Theme</subset.shader>
+		<subset.iconset>Icônes du Menu</subset.iconset>
+		<subset.shader>Shaders du Theme</subset.shader>
 		<subset.music>System Music</subset.music>
-		<subset.MainBGColor>Couleur d'arrière-plan principale </subset.MainBGColor>
+		<subset.mainBackgroundColor>Couleur d'arrière-plan principale</subset.mainBackgroundColor>
 		<subset.tveffect>Effet d'écran Vista CoinOps</subset.tveffect>
-		<subset.CoinOpsDefault>Modèle d'arrière-plan Vista CoinOps </subset.CoinOpsDefault>
-		<subset.ShowTopMarquee>Afficher le marquee supérieur dans les vues CoinOps</subset.ShowTopMarquee>
+		<subset.coinOpsDefault>Modèle d'arrière-plan Vista CoinOps</subset.coinOpsDefault>
+		<subset.showTopMarquee>Afficher le marquee supérieur dans les vues CoinOps</subset.showTopMarquee>
 	</variables>
 
 
@@ -140,7 +200,7 @@ Tema proibido para uso comercial
 		<carouselViewName>Carrussel</carouselViewName>
 		<carouselDefaultViewName>Carrussel Simple</carouselDefaultViewName>
 		<carouselDetailsViewName>Carrussel Detallado</carouselDetailsViewName>
-		<carouselposterViewName>Cartel de Carrossel</carouselposterViewName>
+		<carouselPosterViewName>Cartel de Carrossel</carouselPosterViewName>
 		<hartfdefViewName>Artflix (Vista Estandar)</hartfdefViewName>
 		<hspindefViewName>HSpin (Vista Estandar)</hspindefViewName>
 		<nflixViewName>NFlix (Statico)</nflixViewName>
@@ -153,30 +213,31 @@ Tema proibido para uso comercial
 		<nomusic>Aleatoro</nomusic>
 		<silence>Sin Musica de Fondo</silence>
 		<default>Estandar</default>
-		<huegreen>Rojo</huegreen>
-		<huered>Vermelho</huered>
-		<hueblue>Azul</hueblue>
-		<huepurple>Purpura</huepurple>
-		<icondef>Iconos Estandar</icondef>
-		<copstv>Solo TV</copstv>
-		<copsarc>Solo Arcade</copsarc>
-		<svhsgl>VHS Glitch (Pesado)</svhsgl>
-		<scrtgl>CRT Glitch (Pesado)</scrtgl>
-		<scrtfs>CRT Pantalla Completa</scrtfs>
-		<sclfs>Scanlines Pantalla Completa</sclfs>
-		<scanalt>Scanlines Alternativo</scanalt>
+		<green>Rojo</green>
+		<red>Vermelho</red>
+		<blue>Azul</blue>
+		<purple>Purpura</purple>
+		<yellow>Amarillo</yellow>
+		<gray>Gris</gray>
+		<iconDefault>Iconos Estandar</iconDefault>
+		<coinOpsTV>Solo TV</coinOpsTV>
+		<coinOpsArcade>Solo Arcade</coinOpsArcade>
+		<shaderVhsGlich>VHS Glitch (Pesado)</shaderVhsGlich>
+		<shaderCrtGlitch>CRT Glitch (Pesado)</shaderCrtGlitch>
+		<shaderCrtFullScreen>CRT Pantalla Completa</shaderCrtFullScreen>
+		<shaderScanlinesFullScreen>Scanlines Pantalla Completa</shaderScanlinesFullScreen>
+		<shaderScanlinesLight>Scanlines Alternativo</shaderScanlinesLight>
 		<systeview_random_video>Videos Aleatorios</systeview_random_video>
 		<systeview_random_video_logo>Videos Aleatorios (Logos)</systeview_random_video_logo>
 		<systeview_random_carousel>Horizontal Carrussel</systeview_random_carousel>
 		<subset.systemview>Vistas de Sistemas</subset.systemview>
-		<subset.colorset>Imagenes de Fondo</subset.colorset>
 		<subset.iconset>Iconos de Menu</subset.iconset>
 		<subset.shader>Shaders de Tema</subset.shader>
 		<subset.music>Musica del Sistemas</subset.music>
-		<subset.MainBGColor>Color de Fondo Principal</subset.MainBGColor>
+		<subset.mainBackgroundColor>Color de Fondo Principal</subset.mainBackgroundColor>
 		<subset.tveffect>Efecto de pantalla Vista CoinOps</subset.tveffect>
-		<subset.CoinOpsDefault>Fondo estandar de CoinOps Vista</subset.CoinOpsDefault>
-		<subset.ShowTopMarquee>Mostrar la marquee superior en las vistas de CoinOps</subset.ShowTopMarquee>
+		<subset.coinOpsDefault>Fondo estandar de CoinOps Vista</subset.coinOpsDefault>
+		<subset.showTopMarquee>Mostrar la marquee superior en las vistas de CoinOps</subset.showTopMarquee>
 	</variables>
 
 	<feature supported="carousel">
@@ -188,63 +249,75 @@ Tema proibido para uso comercial
 
 	<view name="menu">
 		<menuText name="menutitle">
-			<fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
-			<fontSize>0.04</fontSize>
-			<color>f01e29</color>
+			<fontPath>./fonts/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.044</fontSize>
+			<color>FAFAFA</color>
 		</menuText>
 		<menuText name="menufooter">
-			<fontPath>./_inc/fonts/OpenSans-Light.ttf</fontPath>
-			<fontSize>0.023</fontSize>
-			<color>868686</color>
+			<fontPath>./fonts/Cabin-Regular.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>777777FF</color>
 		</menuText>
 		<menuText name="menutext">
-			<fontPath>./_inc/fonts/OpenSans-Light.ttf</fontPath>
-			<fontSize>0.029</fontSize>
-			<color>868686</color>
-			<separatorColor>191919</separatorColor>
-			<selectorColor>0b0102</selectorColor>
-			<selectorColorEnd>f60915</selectorColorEnd>
+			<fontPath>./fonts/Cabin-Regular.ttf</fontPath>
+			<fontSize>0.0325</fontSize>
+			<fontSize tinyScreen="true">0.034</fontSize>
+			<color>969696</color>
+			<separatorColor>282828</separatorColor>
+			<selectorColor>${baseColor}</selectorColor>
+			<selectorColorEnd>${gradientEndColor}</selectorColorEnd>
 			<selectedColor>FFFFFF</selectedColor>
 			<selectorGradientType>horizontal</selectorGradientType>
 		</menuText>
 		<menuTextSmall name="menutextsmall">
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
-			<fontSize>0.022</fontSize>
-			<color>e0343d</color>
+			<fontPath>./fonts/Cabin-Regular.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>${groupColor}</color>
 		</menuTextSmall>
+		<menuGroup name="menugroup">
+			<fontPath>./fonts/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<color>${groupColor}</color>
+			<separatorColor>${groupSeparatorColor}</separatorColor>
+			<backgroundColor>00000000</backgroundColor>
+			<lineSpacing>2.5</lineSpacing>
+		</menuGroup>
 		<menuBackground name="menubg">
-			<color>0a0b0c</color>
+			<color>242424</color>
 			<cornerSize>32 32</cornerSize>
-			<path>./_inc/frame.png</path>
+			<path>./menu/frame.png</path>
+			<scrollbarColor>96969620</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.003</scrollbarSize>
+			<scrollbarAlignment>innerright</scrollbarAlignment>
 		</menuBackground>
 		<menuIcons name="menuicons">
-			<iconKodi>./_inc/icons/Kodi.png</iconKodi>
-			<iconSystem>./_inc/icons/System.png</iconSystem>
-			<iconUpdates>./_inc/icons/Updates.png</iconUpdates>
-			<iconGames>./_inc/icons/Games.png</iconGames>
-			<iconControllers>./_inc/icons/Controllers.png</iconControllers>
-			<iconUI>./_inc/icons/UI.png</iconUI>
-			<iconSound>./_inc/icons/Sound.png</iconSound>
-			<iconNetwork>./_inc/icons/Network.png</iconNetwork>
-			<iconScraper>./_inc/icons/Scraper.png</iconScraper>
-			<iconAdvanced>./_inc/icons/Advanced.png</iconAdvanced>
-			<iconQuit>./_inc/icons/Quit.png</iconQuit>
-			<iconRestart>./_inc/icons/Restart.png</iconRestart>
-			<iconShutdown>./_inc/icons/Shutdown.png</iconShutdown>
-			<iconFastShutdown>./_inc/icons/Fastshutdown.png</iconFastShutdown>
-			<iconRetroachievements>./_inc/icons/Contest.png</iconRetroachievements>
+			<iconKodi>./icons/Kodi.png</iconKodi>
+			<iconSystem>./icons/System.png</iconSystem>
+			<iconUpdates>./icons/Updates.png</iconUpdates>
+			<iconGames>./icons/Games.png</iconGames>
+			<iconControllers>./icons/Controllers.png</iconControllers>
+			<iconUI>./icons/UI.png</iconUI>
+			<iconSound>./icons/Sound.png</iconSound>
+			<iconNetwork>./icons/Network.png</iconNetwork>
+			<iconScraper>./icons/Scraper.png</iconScraper>
+			<iconAdvanced>./icons/Advanced.png</iconAdvanced>
+			<iconQuit>./icons/Quit.png</iconQuit>
+			<iconRestart>./icons/Restart.png</iconRestart>
+			<iconShutdown>./icons/Shutdown.png</iconShutdown>
+			<iconFastShutdown>./icons/Fastshutdown.png</iconFastShutdown>
+			<iconRetroachievements>./icons/Contest.png</iconRetroachievements>
+			<iconManual>./icons/Manual.png</iconManual>
 		</menuIcons>
 		<menuTextEdit name="menutextedit">
-			<inactive>./_inc/textinput_ninepatch.png</inactive>
-			<active>./_inc/textinput_ninepatch_active.png</active>
+			<inactive>./menu/textinput_ninepatch.png</inactive>
+			<active>./menu/textinput_ninepatch_active.png</active>
 		</menuTextEdit>
-
-		<helpsystem name="help">
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
-			<fontSize>0.022</fontSize>
-			<pos>0.06 0.955</pos>
-			<textColor>FFFFFF</textColor>
-		</helpsystem>
+		<menuButton name="menubutton">
+			<path>./menu/button.png</path>
+			<filledPath>./menu/button_filled.png</filledPath>
+			<cornerSize>8 8</cornerSize>
+		</menuButton>
 	</view>
 
 	<view name="screen">
@@ -252,11 +325,24 @@ Tema proibido para uso comercial
 			<pos>0.015 0.02</pos>
 			<size>0.085 0.025</size>
 			<itemSpacing>0.003</itemSpacing>
-			<imagePath>./_inc/gamepad.svg</imagePath>
+			<imagePath>./assets/gamepad.svg</imagePath>
 			<color>FFFFFF80</color>
 			<activityColor>A0A0FFC0</activityColor>
 			<hotkeyColor>FFA0A0C0</hotkeyColor>
 		</controllerActivity>
+	</view>
+
+	<view name="menu, system, grid">
+		<helpsystem name="help">
+			<textColor>FFFFFF</textColor>
+			<iconColor>7d7d7d</iconColor>
+			<fontSize>0.030</fontSize>
+			<pos>0.02 0.96</pos>
+
+			<pos verticalScreen="true">0.5 0.96</pos>
+			<origin verticalScreen="true">0.5 0.5</origin>
+			<fontSize verticalScreen="true">0.025</fontSize>
+		</helpsystem>
 	</view>
 
 	<view name="grid">
@@ -278,13 +364,6 @@ Tema proibido para uso comercial
 			<zIndex>4</zIndex>
 		</image>
 
-		<helpsystem name="help">
-			<fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
-			<fontSize>0.017</fontSize>
-			<pos>0.02 0.955</pos>
-			<textColor>FFFFFF</textColor>
-		</helpsystem>
-
 		<image name="backgroundSystem" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
@@ -304,22 +383,22 @@ Tema proibido para uso comercial
 
 		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
 			<color>A0A0B000</color>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</text>
 		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
 			<color>ffffff00</color>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</text>
 		<datetime name="md_releasedate, md_lastplayed">
 			<color>ffffff00</color>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</datetime>
 		<rating name="md_rating">
 			<pos>0.88 0.88</pos>
 			<size>0.05 0.03</size>
 			<color>FFFFFF</color>
 			<unfilledColor>808080</unfilledColor>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</rating>
 		<imagegrid name="gamegrid">
 			<pos>0.025 0.16</pos>
@@ -356,7 +435,7 @@ Tema proibido para uso comercial
 		</text>
 
 		<text name="md_name">
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</text>
 	</view>
 
@@ -368,7 +447,7 @@ Tema proibido para uso comercial
 			<alignment>left</alignment>
 			<glowColor>00000016</glowColor>
 			<glowSize>4</glowSize>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 			<zIndex>0</zIndex>
 		</text>
 
@@ -455,7 +534,6 @@ Tema proibido para uso comercial
 			<path>./assets/overlaySystemData.png</path>
 			<zIndex>6</zIndex>
 		</image>
-
 		<text name="md_description">
 			<fontPath>./assets/Circular Std Book.ttf</fontPath>
 			<color>FFFFFF</color>
@@ -523,7 +601,7 @@ Tema proibido para uso comercial
 
 		<text name="md_publisher">
 			<color>ffffff00</color>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 			<pos>0.42 0.63</pos>
 		</text>
 	</customView>
@@ -536,7 +614,7 @@ Tema proibido para uso comercial
 			<alignment>left</alignment>
 			<glowColor>00000016</glowColor>
 			<glowSize>4</glowSize>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 			<zIndex>0</zIndex>
 		</text>
 
@@ -629,7 +707,7 @@ Tema proibido para uso comercial
 			<size>0.05 0.03</size>
 			<color>FFFFFF</color>
 			<unfilledColor>808080</unfilledColor>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</rating>
 
 		<image name="md_image">
@@ -638,7 +716,7 @@ Tema proibido para uso comercial
 
 		<text name="md_publisher">
 			<color>ffffff00</color>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 			<pos>0.42 0.63</pos>
 		</text>
 	</customView>
@@ -721,9 +799,9 @@ Tema proibido para uso comercial
 			<maxSize>0.25 0.15</maxSize>
 		</image>
 
+		<!-- Hide Help System -->
 		<helpsystem name="help">
-			<fontSize>0.001</fontSize>
-			<pos>2 0.955</pos>
+			<pos>2 0.96</pos>
 		</helpsystem>
 	</customView>
 
@@ -837,7 +915,7 @@ Tema proibido para uso comercial
 			<pos>0.106 0.22</pos>
 			<size>0.365 0.48</size>
 			<origin>0 0</origin>
-			<delay>0</delay>
+			<delay>0.2</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>5</zIndex>
@@ -847,9 +925,9 @@ Tema proibido para uso comercial
 			<zIndex>0</zIndex>
 		</image>
 
-		<image name="logo">
+		<!-- <image name="logo">
 			<zIndex>0</zIndex>
-		</image>
+		</image> -->
 
 		<image name="md_marquee">
 			<pos>0.285 0.04</pos>
@@ -857,11 +935,9 @@ Tema proibido para uso comercial
 		</image>
 
 		<helpsystem name="help">
-			<pos>2.15 0.96</pos>
-			<fontSize>0.010</fontSize>
-			<textColor>539ac8</textColor>
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
+		 	<pos>2 0.96</pos>
 		</helpsystem>
+
 	</customView>
 
 	<customView name="Pegasus OS" inherits="grid" tinyScreen="false" displayName="${pegasusViewName}">
@@ -904,8 +980,8 @@ Tema proibido para uso comercial
 			<glowSize>1</glowSize>
 			<fontPath>./assets/Circular Std Book.ttf</fontPath>
 			<alignment>left</alignment>
-
 		</text>
+
 		<imagegrid name="gamegrid">
 			<pos>0.72 -0.04</pos>
 			<size>0.3 0.7</size>
@@ -958,7 +1034,7 @@ Tema proibido para uso comercial
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<origin>0 0</origin>
-			<delay>1</delay>
+			<delay>0.3</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>5</zIndex>
@@ -978,17 +1054,8 @@ Tema proibido para uso comercial
 			<zIndex>0</zIndex>
 		</image>
 
-		<image name="md_image">
-			<color>707070FF</color>
-			<zIndex>4</zIndex>
-			<pos>0 0</pos>
-		</image>
-
 		<helpsystem name="help">
-			<pos>2.15 0.96</pos>
-			<fontSize>0.010</fontSize>
-			<textColor>539ac8</textColor>
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
+			<pos>2 0.96</pos>
 		</helpsystem>
 	</customView>
 
@@ -1000,7 +1067,7 @@ Tema proibido para uso comercial
 			<alignment>left</alignment>
 			<glowColor>00000016</glowColor>
 			<glowSize>4</glowSize>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 			<zIndex>0</zIndex>
 		</text>
 		<text name="md_developer">
@@ -1080,7 +1147,7 @@ Tema proibido para uso comercial
 			<size>0.05 0.03</size>
 			<color>FFFFFF</color>
 			<unfilledColor>808080</unfilledColor>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</rating>
 
 		<image name="logo">
@@ -1089,7 +1156,7 @@ Tema proibido para uso comercial
 
 		<text name="md_developer, md_publisher">
 			<color>ffffff00</color>
-			<fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+			<fontPath>./fonts/Homizio.ttf</fontPath>
 			<pos>0.42 0.63</pos>
 		</text>
 	</customView>
@@ -1256,7 +1323,7 @@ Tema proibido para uso comercial
 			<pos>0.83 0.775</pos>
 			<minSize>0.30 0.30</minSize>
 			<origin>0.5 0.5</origin>
-			<delay>1</delay>
+			<delay>0.2</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 		</video>
@@ -1280,7 +1347,7 @@ Tema proibido para uso comercial
 
 	</customView>
 
-	<customView name="Carousel Poster" inherits="Carousel" displayName="${carouselposterViewName}">
+	<customView name="Carousel Poster" inherits="Carousel" displayName="${carouselPosterViewName}">
 		<imagegrid name="gamegrid">
 			<autoLayout>5 1</autoLayout>
 			<autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
@@ -1331,7 +1398,7 @@ Tema proibido para uso comercial
 			<pos>0.73 0.275</pos>
 			<maxSize>0.40 0.40</maxSize>
 			<origin>0.5 0.5</origin>
-			<delay>1</delay>
+			<delay>0.2</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 		</video>
@@ -1370,5 +1437,13 @@ Tema proibido para uso comercial
 		</image>
 	</customView>
 
+	<include subset="iconset" name="Standard Icons" displayName="${iconDefault}">./iconsets/default.xml</include>
+	<include subset="iconset" name="SNES">./iconsets/snes.xml</include>
+	<include subset="iconset" name="SNES Alt">./iconsets/snesalt.xml</include>
+	<include subset="iconset" name="PSX">./iconsets/psx.xml</include>
+	<include subset="iconset" name="XBox">./iconsets/xbox.xml</include>
+	<include subset="iconset" name="Xbox One">./iconsets/xboxone.xml</include>
+	<include subset="iconset" name="Switch">./iconsets/switch.xml</include>
+	<include subset="iconset" name="ARCADE">./iconsets/arcade.xml</include>
 
 </theme>

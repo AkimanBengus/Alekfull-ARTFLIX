@@ -1,7 +1,7 @@
 <theme>
 	<formatVersion>4</formatVersion>
 
-	<view name="menu, system">
+	<view name="menu, system, grid">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
 			<iconUpDown>./psx/updown.png</iconUpDown>
