@@ -1,11 +1,8 @@
 <theme>
 	<formatVersion>4</formatVersion>
 
-
-	<view name="system">
-		<image name="backgroundSystem" extra="true">
-			<path>./../assets/arts/default.jpg</path>
-			<path>./../assets/arts/$system.jpg</path>
-		</image>
-	</view>
+	<variables>
+		<backgroundPath>./assets/arts</backgroundPath>
+	</variables>
+	
 </theme>

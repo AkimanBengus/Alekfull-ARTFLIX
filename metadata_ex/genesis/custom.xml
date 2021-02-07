@@ -39,12 +39,12 @@
 			<path>./assets/logos/genesis.png</path>
 		</image>
 
-		<image name="sublogo" region="EN">
+		<image name="logoHeader" region="EN">
 			<path>./assets/logos/genesis.png</path>
 		</image>
 
-		<image name="backgroundSystem"  region="EN">
-			<path>./assets/arts/genesis.jpg</path>
+		<image name="backgroundSystem" region="EN">
+			<path>${backgroundPath}/genesis.jpg</path>
 		</image>
 
 
@@ -57,53 +57,5 @@
 		</text>
 
 	</view>
-	<view name="grid">
-		<image name="backgroundGameList" extra="true"  region="EN">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./assets/arts/genesis.jpg</path>
-			<zIndex>5</zIndex>
-		</image>
-
-		<image name="logo4" region="EN">
-			<path>./assets/logos/genesis.png</path>
-			<pos>0.02 0.12</pos>
-			<maxSize>0.34 0.16</maxSize>
-			<origin>0 0</origin>
-			<zIndex>5</zIndex>
-		</image>
-
-	</view>
-
-	<customView name="Carousel">
-		<image name="backgroundGameList" extra="true"  region="EN">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./assets/arts/genesis.jpg</path>
-			<zIndex>5</zIndex>
-		</image>
-	</customView>
-
-	<customView name="Carousel Default">
-		<image name="backgroundGameList" extra="true"  region="EN">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./assets/arts/genesis.jpg</path>
-			<zIndex>5</zIndex>
-		</image>
-	</customView>
-
-	<customView name="Carousel + Details">
-		<image name="backgroundGameList" extra="true"  region="EN">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./assets/arts/genesis.jpg</path>
-			<zIndex>5</zIndex>
-		</image>
-	</customView>
 
 </theme>

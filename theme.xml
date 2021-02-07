@@ -11,8 +11,6 @@ Tema proibido para uso comercial
 <?xml version="1.0" encoding="UTF-8"?>
 <theme defaultView="CoinOps Details">
 	<formatVersion>7</formatVersion>
-	<include>./systemview/systemview.xml</include>
-	<include>./metadata_ex/$system/custom.xml</include>
 
 	<!-- To Translate -->
 	<include subset="screenType" name="Full HD 1080p">./systemview/screenTypeFullHD.xml</include>
@@ -31,10 +29,10 @@ Tema proibido para uso comercial
 	<include subset="music" name="Off" displayName="${nomusic}"/>
 
 	<include subset="mainBackgroundColor" name="Gray" displayName="${gray}"/>
-	<include subset="mainBackgroundColor" name="Green" displayName="${green}">./background_colors/green.xml</include>
-	<include subset="mainBackgroundColor" name="Red" displayName="${red}">./background_colors/red.xml</include>
-	<include subset="mainBackgroundColor" name="Blue" displayName="${blue}">./background_colors/blue.xml</include>
-	<include subset="mainBackgroundColor" name="Purple" displayName="${purple}">./background_colors/purple.xml</include>
+	<include subset="mainBackgroundColor" name="Green" displayName="${green}">./systemview/background_colors/green.xml</include>
+	<include subset="mainBackgroundColor" name="Red" displayName="${red}">./systemview/background_colors/red.xml</include>
+	<include subset="mainBackgroundColor" name="Blue" displayName="${blue}">./systemview/background_colors/blue.xml</include>
+	<include subset="mainBackgroundColor" name="Purple" displayName="${purple}">./systemview/background_colors/purple.xml</include>
 
 	<include subset="shader" name="None" displayName="${none}"/>
 	<include subset="shader" name="CRT">./effects/crtSystem.xml</include>
@@ -60,6 +58,18 @@ Tema proibido para uso comercial
 	<include subset="coinOpsDefault" name="TV Only" displayName="${coinOpsTV}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOpsTV.xml</include>
 	<include subset="coinOpsDefault" name="Arcade Only" displayName="${coinOpsArcade}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOpsArcade.xml</include>
 
+	<!-- <variables>
+		<baseColor>8b0000</baseColor>
+		<gradientEndColor>6b2020</gradientEndColor>
+		<centerFadeColor>8b000050</centerFadeColor>
+		<backgroundColor>200000</backgroundColor>
+		<bottomBarColor>8b0000c0</bottomBarColor>
+		<glowColor>Ab000020</glowColor>
+		<systemInfoColor>DDDDDDD8</systemInfoColor>
+		<groupColor>BD4747</groupColor>
+		<groupSeparatorColor>BD4747</groupSeparatorColor>
+	</variables> -->
+
 	<!-- Subset options for color  -->
 	<include subset="colorset" name="Red" displayName="${red}"/>
 	<include subset="colorset" name="Blue" displayName="${blue}">./menu/colors/blue.xml</include>
@@ -69,6 +79,20 @@ Tema proibido para uso comercial
 	<include subset="colorset" name="Violet">./menu/colors/violet.xml</include>
 	<include subset="colorset" name="Orange">./menu/colors/orange.xml</include>
 	<include subset="colorset" name="Gray" displayName="${gray}">./menu/colors/gray.xml</include>
+
+	<include subset="iconset" name="Standard Icons" displayName="${iconDefault}">./iconsets/default.xml</include>
+	<include subset="iconset" name="SNES">./iconsets/snes.xml</include>
+	<include subset="iconset" name="SNES Alt">./iconsets/snesalt.xml</include>
+	<include subset="iconset" name="PSX">./iconsets/psx.xml</include>
+	<include subset="iconset" name="XBox">./iconsets/xbox.xml</include>
+	<include subset="iconset" name="Xbox One">./iconsets/xboxone.xml</include>
+	<include subset="iconset" name="Switch">./iconsets/switch.xml</include>
+	<include subset="iconset" name="ARCADE">./iconsets/arcade.xml</include>
+
+
+	<include>./systemview/systemview.xml</include>
+	<include>./metadata_ex/$system/custom.xml</include>
+
 
 	<variables>
 		<subset.mainBackgroundColor>Main Background Color</subset.mainBackgroundColor>
@@ -91,18 +115,18 @@ Tema proibido para uso comercial
 		<systemInfoColor>DDDDDDD8</systemInfoColor>
 		<groupColor>BD4747</groupColor>
 		<groupSeparatorColor>BD4747</groupSeparatorColor>
-		<backgroundImage>./art/fiber.png</backgroundImage>
+		<helpIconColor>969696</helpIconColor>
 	</variables>
-	
+
 	<variables>
-		<helpSubsetName>Help icons</helpSubsetName>
+		<helpIconsColor>Help icons</helpIconsColor>
 		<colored>Colored</colored>
 		<subset.colorset>Colorset</subset.colorset>
 	</variables>
 
 	<!-- French -->
 	<variables lang="fr">
-		<helpSubsetName>Icônes d'aide</helpSubsetName>
+		<helpIconsColor>Icônes d'aide</helpIconsColor>
 		<colored>Colorés</colored>
 		<subset.colorset>Jeux de couleurs</subset.colorset>
 	</variables>
@@ -330,12 +354,18 @@ Tema proibido para uso comercial
 			<activityColor>A0A0FFC0</activityColor>
 			<hotkeyColor>FFA0A0C0</hotkeyColor>
 		</controllerActivity>
+
+		<text name="clock">
+			<pos>0.90 0.009</pos>
+			<color>FFFFFF80</color>
+			<fontSize>0.030</fontSize>
+		</text>
 	</view>
 
 	<view name="menu, system, grid">
 		<helpsystem name="help">
-			<textColor>FFFFFF</textColor>
-			<iconColor>7d7d7d</iconColor>
+			<textColor>969696</textColor>
+			<iconColor>${helpIconColor}</iconColor>
 			<fontSize>0.030</fontSize>
 			<pos>0.02 0.96</pos>
 
@@ -369,7 +399,7 @@ Tema proibido para uso comercial
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<path>./assets/arts/default.jpg</path>
-			<path>./assets/arts/$system.jpg</path>
+			<path>${backgroundPath}/$system.jpg</path>
 			<zIndex>2</zIndex>
 		</image>
 
@@ -464,7 +494,7 @@ Tema proibido para uso comercial
 		</imagegrid>
 
 		<text name="md_developer">
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Book.ttf</fontPath>
 			<color>5c5b5c</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
@@ -477,7 +507,7 @@ Tema proibido para uso comercial
 		</text>
 
 		<text name="md_lbl_developer">
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
@@ -491,7 +521,7 @@ Tema proibido para uso comercial
 		</text>
 
 		<datetime name="md_releasedate">
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
@@ -535,7 +565,7 @@ Tema proibido para uso comercial
 			<zIndex>6</zIndex>
 		</image>
 		<text name="md_description">
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Book.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
@@ -583,7 +613,7 @@ Tema proibido para uso comercial
 		<text name="md_genre">
 			<pos>0.1515 0.5291</pos>
 			<alignment>center</alignment>
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 			<fontSize>0.0138</fontSize>
 			<color>FFFFFF</color>
 			<zIndex>42</zIndex>
@@ -805,7 +835,6 @@ Tema proibido para uso comercial
 		</helpsystem>
 	</customView>
 
-
 	<customView name="CoinOps Details" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
 		<image name="md_thumbnail">
 			<pos>0.088 0.89</pos>
@@ -821,19 +850,19 @@ Tema proibido para uso comercial
 			<glowColor>00000016</glowColor>
 			<glowSize>2</glowSize>
 			<alignment>left</alignment>
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 			<zIndex>36</zIndex>
 		</text>
 
 		<text name="md_description">
-			<pos>0.55 0.88</pos>
-			<size>0.28 0.100</size>
+			<pos>0.55 0.845</pos>
+			<size>0.28 0.15</size>
 			<fontSize>0.020</fontSize>
 			<color>FFFFFF</color>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
 			<alignment>left</alignment>
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Book.ttf</fontPath>
 		</text>
 
 		<text name="md_developer">
@@ -843,7 +872,7 @@ Tema proibido para uso comercial
 			<color>539ac8</color>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Book.ttf</fontPath>
 			<alignment>left</alignment>
 		</text>
 
@@ -934,10 +963,10 @@ Tema proibido para uso comercial
 			<maxSize>0.22 0.12</maxSize>
 		</image>
 
+		<!-- Hide Help System -->
 		<helpsystem name="help">
 		 	<pos>2 0.96</pos>
 		</helpsystem>
-
 	</customView>
 
 	<customView name="Pegasus OS" inherits="grid" tinyScreen="false" displayName="${pegasusViewName}">
@@ -955,7 +984,7 @@ Tema proibido para uso comercial
 			<glowColor>00000016</glowColor>
 			<glowSize>2</glowSize>
 			<alignment>left</alignment>
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 			<zIndex>36</zIndex>
 		</text>
 
@@ -968,7 +997,7 @@ Tema proibido para uso comercial
 			<glowSize>1</glowSize>
 			<alignment>left</alignment>
 			<lineSpacing>1.08</lineSpacing>
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Book.ttf</fontPath>
 		</text>
 
 		<text name="md_developer">
@@ -978,7 +1007,7 @@ Tema proibido para uso comercial
 			<color>539ac8</color>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
-			<fontPath>./assets/Circular Std Book.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Book.ttf</fontPath>
 			<alignment>left</alignment>
 		</text>
 
@@ -1020,7 +1049,7 @@ Tema proibido para uso comercial
 			<size>1 0</size>
 		</text>
 
-		<image name="overlayCoinOps" extra="true">
+		<image name="overlayPegasus" extra="true">
 			<color>00293e</color>
 			<origin>0 0</origin>
 			<pos>0 0</pos>
@@ -1054,6 +1083,7 @@ Tema proibido para uso comercial
 			<zIndex>0</zIndex>
 		</image>
 
+		<!-- Hide Help System -->
 		<helpsystem name="help">
 			<pos>2 0.96</pos>
 		</helpsystem>
@@ -1169,7 +1199,7 @@ Tema proibido para uso comercial
 			<alignment>center</alignment>
 			<glowColor>00000016</glowColor>
 			<glowSize>4</glowSize>
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 		</text>
 		<text name="md_developer">
 			<color>808080ff</color>
@@ -1224,7 +1254,7 @@ Tema proibido para uso comercial
 			<alignment>center</alignment>
 			<glowColor>00000016</glowColor>
 			<glowSize>4</glowSize>
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 		</text>
 
 		<text name="md_developer">
@@ -1307,7 +1337,7 @@ Tema proibido para uso comercial
 			<size>0.50 0.05</size>
 			<color>F0F0F0</color>
 			<fontSize>0.052</fontSize>
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
 			<alignment>left</alignment>
@@ -1380,7 +1410,7 @@ Tema proibido para uso comercial
 			<size>0.50 0.05</size>
 			<color>F0F0F0</color>
 			<fontSize>0.052</fontSize>
-			<fontPath>./assets/Circular Std Black.ttf</fontPath>
+			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
 			<alignment>left</alignment>
@@ -1435,15 +1465,4 @@ Tema proibido para uso comercial
 			<size>1 1</size>
 			<zIndex>10</zIndex>
 		</image>
-	</customView>
-
-	<include subset="iconset" name="Standard Icons" displayName="${iconDefault}">./iconsets/default.xml</include>
-	<include subset="iconset" name="SNES">./iconsets/snes.xml</include>
-	<include subset="iconset" name="SNES Alt">./iconsets/snesalt.xml</include>
-	<include subset="iconset" name="PSX">./iconsets/psx.xml</include>
-	<include subset="iconset" name="XBox">./iconsets/xbox.xml</include>
-	<include subset="iconset" name="Xbox One">./iconsets/xboxone.xml</include>
-	<include subset="iconset" name="Switch">./iconsets/switch.xml</include>
-	<include subset="iconset" name="ARCADE">./iconsets/arcade.xml</include>
-
-</theme>
+	</customView></theme>

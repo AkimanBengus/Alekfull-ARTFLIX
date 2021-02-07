@@ -1,56 +1,8 @@
 <theme>
 	<formatVersion>4</formatVersion>
 
-
-	<view name="system">
-		<image name="backgroundSystem" extra="true">
-			<path>./../assets/arts/default.jpg</path>
-			<path>./../assets/arts/540/$system.jpg</path>
-		</image>
-	</view>
-
-	<view name="grid">
-		<image name="backgroundGameList" extra="true">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./../assets/arts/default.jpg</path>
-			<path>./../assets/arts/540/$system.jpg</path>
-			<zIndex>4</zIndex>
-		</image>
-	</view>
-
-	<customView name="Carousel">
-		<image name="backgroundGameList" extra="true">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./../assets/arts/default.jpg</path>
-			<path>./../assets/arts/540/$system.jpg</path>
-			<zIndex>4</zIndex>
-		</image>
-	</customView>
-
-	<customView name="Carousel Default">
-		<image name="backgroundGameList" extra="true">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./../assets/arts/default.jpg</path>
-			<path>./../assets/arts/540/$system.jpg</path>
-			<zIndex>4</zIndex>
-		</image>
-	</customView>
-
-	<customView name="Carousel + Details">
-		<image name="backgroundGameList" extra="true">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./../assets/arts/default.jpg</path>
-			<path>./../assets/arts/540/$system.jpg</path>
-			<zIndex>4</zIndex>
-		</image>
-	</customView>
+	<variables>
+		<backgroundPath>./assets/arts/540</backgroundPath>
+	</variables>
 
 </theme>

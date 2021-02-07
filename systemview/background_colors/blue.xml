@@ -8,12 +8,12 @@
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<path>./../assets/overlayhue.png</path>
-			<zIndex>40</zIndex>
+			<path>./assets/overlayhue.png</path>
+			<zIndex>41</zIndex>
 		</image>
 
 		<image name="backgroundOverlay" extra="true">
-			<visible>false</visible>
+			<color>FFFFFF30</color>
 		</image>
 
 	</view>

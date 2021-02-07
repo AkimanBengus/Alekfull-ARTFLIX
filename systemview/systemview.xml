@@ -1,27 +1,38 @@
 <theme>
 	<formatVersion>4</formatVersion>
 
+	<!--
+		- $system (use only one type per text tag)
+
+		Variables from es_systems.cfg
+		- fullname: ${system.fullname} ex: Nintendo Entertainment System
+		- name: ${system.name}         ex: nes
+		- theme: ${system.theme}       ex: nes
+	-->
+
 	<view name="system">
  
 		<image name="backgroundSystem" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<origin>0 0</origin>
+			<path>./assets/arts/default.jpg</path>
+			<path>${backgroundPath}/$system.jpg</path>
 		</image>
 
 		<image name="backgroundOverlay" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<path>./../assets/backgroundOverlayLeftShadow.png</path>
-			<zIndex>41</zIndex>
+			<path>./assets/backgroundOverlayLeftShadow.png</path>
+			<zIndex>40</zIndex>
 		</image>
 
 		<image name="backgroundOverlayButton" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<path>./../assets/backgroundOverlayTotalGamesButton.png</path>
+			<path>./assets/backgroundOverlayTotalGamesButton.png</path>
 			<zIndex>42</zIndex>
 		</image>
 
@@ -110,7 +121,7 @@
 		</text>
 
 		<text name="binding_totalGames" extra="true">
-			<text>{binding:total} Jeux</text>
+			<text>{binding:total} Jeux</text>			
 			<fontPath>./../fonts/Circular Std Book.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>center</alignment>

@@ -2,22 +2,9 @@
 	<formatVersion>7</formatVersion>
 
 	<!-- Subset options for help -->
-	<subset name="helpsystem" displayName="${helpSubsetName}">
+	<subset name="helpIconsColor" displayName="${helpIconsColor}">
 		<include name="colored" displayName="${colored}">./../menu/colorhelp.xml</include>
 		<include name="standard" displayName="${default}"/>
 	</subset>
-<!-- 	
-	<include subset="helpsystem" name="colored" displayName="${colored}">./../menu/colorhelp.xml</include>
-	<include subset="helpsystem" name="standard" displayName="${default}"/>
-
-	<variables>
-		<subset.helpsystem>${helpSubsetName}</subset.helpsystem>
-	</variables>	 -->
-
-<!-- 
-<subset name="helpsystem" displayName="${helpSubsetName}">
-
-	<include subset="headerStyle" name="System Logo" displayName="System Logo">./systemview/systemview_header_logo.xml</include>
-	<include subset="headerStyle" name="System Name" displayName="System Name">./systemview/systemview_header_text.xml</include> -->
 
 </theme>
