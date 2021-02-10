@@ -19,11 +19,11 @@
 
 		<image name="logoHeader" extra="true">
 			<storyboard>
-                <animation property="x" from="0.175" begin="0" duration="350" mode="easeOut"/>
-                <animation property="y" from="0.90" begin="0" duration="350" mode="easeOut"/>
-                <animation property="opacity" from="0.5" to="1" duration="50" mode="linear"/>
-                <animation property="scale" from="0.5" to="1" duration="350" mode="easeOut"/>
-            </storyboard>
+				<animation property="x" from="0.175" begin="0" duration="350" mode="easeOut"/>
+				<animation property="y" from="0.90" begin="0" duration="350" mode="easeOut"/>
+				<animation property="opacity" from="0.5" to="1" duration="50" mode="linear"/>
+				<animation property="scale" from="0.5" to="1" duration="350" mode="easeOut"/>
+			</storyboard>
 		</image>
 
 	</view>

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <variables>
-    <baseColor>3675CA</baseColor>
-    <gradientEndColor>00205b</gradientEndColor>
-    <centerFadeColor>4060a050</centerFadeColor>    
-    <bottomBarColor>4075D8C5</bottomBarColor>
-    <glowColor>3060Ab24</glowColor>
-    <systemInfoColor>FAFAFFB0</systemInfoColor>
-    <backgroundColor>051222</backgroundColor>
-    <groupColor>5178C3</groupColor>
-    <groupSeparatorColor>3B5B96</groupSeparatorColor>
-  </variables>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<baseColor>3675CA</baseColor>
+		<gradientEndColor>00205b</gradientEndColor>
+		<centerFadeColor>4060a050</centerFadeColor>
+		<bottomBarColor>4075D8C5</bottomBarColor>
+		<glowColor>3060Ab24</glowColor>
+		<systemInfoColor>FAFAFFB0</systemInfoColor>
+		<backgroundColor>051222</backgroundColor>
+		<groupColor>5178C3</groupColor>
+		<groupSeparatorColor>3B5B96</groupSeparatorColor>
+	</variables>
 </theme>
