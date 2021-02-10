@@ -49,7 +49,7 @@
 		</text>
 
 		<image name="logo" region="ES">
-			<path>./../assets/logos/segamegacd.png</path>
+			<path>./assets/logos/segamegacd.png</path>
 		</image>
 
 		<image name="sublogo" region="ES">
@@ -57,7 +57,7 @@
 		</image>
 
 		<image name="logo" region="FR">
-			<path>./../assets/logos/segamegacd.png</path>
+			<path>./assets/logos/segamegacd.png</path>
 		</image>
 
 		<image name="sublogo" region="EN">
@@ -67,7 +67,7 @@
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
-			<path>./../assets/coinops/megadrive.png</path>
+			<path>./assets/coinops/megadrive.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
@@ -75,7 +75,7 @@
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">
-			<path>./../assets/coinops/megadrive.png</path>
+			<path>./assets/coinops/megadrive.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>

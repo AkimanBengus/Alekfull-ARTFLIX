@@ -58,18 +58,6 @@ Tema proibido para uso comercial
 	<include subset="coinOpsDefault" name="TV Only" displayName="${coinOpsTV}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOpsTV.xml</include>
 	<include subset="coinOpsDefault" name="Arcade Only" displayName="${coinOpsArcade}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOpsArcade.xml</include>
 
-	<!-- <variables>
-		<baseColor>8b0000</baseColor>
-		<gradientEndColor>6b2020</gradientEndColor>
-		<centerFadeColor>8b000050</centerFadeColor>
-		<backgroundColor>200000</backgroundColor>
-		<bottomBarColor>8b0000c0</bottomBarColor>
-		<glowColor>Ab000020</glowColor>
-		<systemInfoColor>DDDDDDD8</systemInfoColor>
-		<groupColor>BD4747</groupColor>
-		<groupSeparatorColor>BD4747</groupSeparatorColor>
-	</variables> -->
-
 	<!-- Subset options for color  -->
 	<include subset="colorset" name="Red" displayName="${red}"/>
 	<include subset="colorset" name="Blue" displayName="${blue}">./menu/colors/blue.xml</include>
@@ -89,7 +77,7 @@ Tema proibido para uso comercial
 	<include subset="iconset" name="Switch">./iconsets/switch.xml</include>
 	<include subset="iconset" name="ARCADE">./iconsets/arcade.xml</include>
 
-
+ 
 	<include>./systemview/systemview.xml</include>
 	<include>./metadata_ex/$system/custom.xml</include>
 
@@ -378,16 +366,12 @@ Tema proibido para uso comercial
 	<view name="grid">
 		<image name="logo">
 			<!-- try png -->
-			<path>./../assets/logos/$system.png</path>
+			<path>./assets/logos/$system.png</path>
 			<!-- try svg -->
-			<path>./../assets/logos/$system.svg</path>
+			<!-- <path>./assets/logos/$system.svg</path> -->
 			<!-- check if lang resources exist -->
-			<path>./../assets/logos/${system.theme}-${lang}.png</path>
-			<path>./../assets/logos/${system.theme}-${lang}.svg</path>
-			<!--
-			<pos>0.02 0.12</pos>
-			<maxSize>0.34 0.16</maxSize>
-			-->
+			<path>./assets/logos/${system.theme}-${lang}.png</path>
+			<!-- <path>./assets/logos/${system.theme}-${lang}.svg</path> -->
 			<pos>0.02 0.12</pos>
 			<maxSize>0.34 0.16</maxSize>
 			<origin>0 0</origin>
@@ -428,7 +412,6 @@ Tema proibido para uso comercial
 			<size>0.05 0.03</size>
 			<color>FFFFFF</color>
 			<unfilledColor>808080</unfilledColor>
-			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</rating>
 		<imagegrid name="gamegrid">
 			<pos>0.025 0.16</pos>
@@ -528,8 +511,6 @@ Tema proibido para uso comercial
 			<lineSpacing>1</lineSpacing>
 			<size>0.04 0.03</size>
 			<pos>0.029 0.374</pos>
-			<glowColor>00000016</glowColor>
-			<glowSize>1</glowSize>
 			<zIndex>42</zIndex>
 			<format>%Y</format>
 		</datetime>
@@ -561,7 +542,7 @@ Tema proibido para uso comercial
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<path>./assets/overlaySystemData.png</path>
+			<path>./assets/backgroundOverlayLeftShadow.png</path>
 			<zIndex>6</zIndex>
 		</image>
 		<text name="md_description">
@@ -587,17 +568,6 @@ Tema proibido para uso comercial
 		</video>
 
 		<image name="logo">
-			<!-- try png -->
-			<path>./../assets/logos/$system.png</path>
-			<!-- try svg -->
-			<path>./../assets/logos/$system.svg</path>
-			<!-- check if lang resources exist -->
-			<path>./../assets/logos/${system.theme}-${lang}.png</path>
-			<path>./../assets/logos/${system.theme}-${lang}.svg</path>
-			<!--
-			<pos>0.266 0.074</pos>
-			<maxSize>0.460 0.126</maxSize>
-			-->
 			<pos>0.152 0.74</pos>
 			<maxSize>0.4 0.126</maxSize>
 			<origin>0 0</origin>
@@ -622,11 +592,11 @@ Tema proibido para uso comercial
 		</text>
 
 		<rating name="md_rating">
-			<zIndex>0</zIndex>
+			<visible>false</visible>
 		</rating>
 
 		<image name="md_image">
-			<zIndex>4</zIndex>
+			<visible>false</visible>
 		</image>
 
 		<text name="md_publisher">
@@ -709,17 +679,6 @@ Tema proibido para uso comercial
 		</video>
 
 		<image name="logo">
-			<!-- try png -->
-			<path>./../assets/logos/$system.png</path>
-			<!-- try svg -->
-			<path>./../assets/logos/$system.svg</path>
-			<!-- check if lang resources exist -->
-			<path>./../assets/logos/${system.theme}-${lang}.png</path>
-			<path>./../assets/logos/${system.theme}-${lang}.svg</path>
-			<!--
-			<pos>0.266 0.074</pos>
-			<maxSize>0.460 0.126</maxSize>
-			-->
 			<pos>0.152 0.74</pos>
 			<maxSize>0.4 0.126</maxSize>
 			<origin>0 0</origin>
@@ -737,7 +696,6 @@ Tema proibido para uso comercial
 			<size>0.05 0.03</size>
 			<color>FFFFFF</color>
 			<unfilledColor>808080</unfilledColor>
-			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</rating>
 
 		<image name="md_image">
@@ -821,7 +779,7 @@ Tema proibido para uso comercial
 		</image>
 
 		<image name="logo">
-			<zIndex>0</zIndex>
+			<visible>false</visible>
 		</image>
 
 		<image name="md_marquee">
@@ -951,12 +909,12 @@ Tema proibido para uso comercial
 		</video>
 
 		<image name="backgroundOverlay" extra="true">
-			<zIndex>0</zIndex>
+			<visible>false</visible>
 		</image>
 
-		<!-- <image name="logo">
-			<zIndex>0</zIndex>
-		</image> -->
+		<image name="logo">
+			<visible>false</visible>
+		</image>
 
 		<image name="md_marquee">
 			<pos>0.285 0.04</pos>
@@ -1074,7 +1032,7 @@ Tema proibido para uso comercial
 		</image>
 
 		<image name="logo">
-			<zIndex>0</zIndex>
+			<visible>false</visible>
 		</image>
 
 		<image name="md_marquee">
@@ -1177,11 +1135,10 @@ Tema proibido para uso comercial
 			<size>0.05 0.03</size>
 			<color>FFFFFF</color>
 			<unfilledColor>808080</unfilledColor>
-			<fontPath>./fonts/Homizio.ttf</fontPath>
 		</rating>
 
 		<image name="logo">
-			<zIndex>0</zIndex>
+			<visible>false</visible>
 		</image>
 
 		<text name="md_developer, md_publisher">
@@ -1313,7 +1270,7 @@ Tema proibido para uso comercial
 
 	<customView name="Carousel + Details" inherits="Carousel" displayName="${carouselDetailsViewName}">
 		<imagegrid name="gamegrid">
-			<pos>-0.40 0.08</pos>
+			<pos>-0.48 0.08</pos>
 			<size>1.2 0.774</size>
 			<padding>0.05 0.14 0.05 0.30</padding>
 			<scrollDirection>horizontal</scrollDirection>
@@ -1328,7 +1285,7 @@ Tema proibido para uso comercial
 			<color>606060FF</color>
 			<origin>0 0</origin>
 			<pos>0.66 0.16</pos>
-			<size>0.34 0.774</size>
+			<size>0.34 0.77</size>
 			<zIndex>12</zIndex>
 		</image>
 		<text name="md_name">
@@ -1350,9 +1307,9 @@ Tema proibido para uso comercial
 			<fontSize>0.025</fontSize>
 		</text>
 		<video name="md_video">
-			<pos>0.83 0.775</pos>
-			<minSize>0.30 0.30</minSize>
 			<origin>0.5 0.5</origin>
+			<pos>0.83 0.73</pos>
+			<maxSize>0.30 0.30</maxSize>
 			<delay>0.2</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
@@ -1366,13 +1323,16 @@ Tema proibido para uso comercial
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
 		</text>
-		<text name="md_rating">
+		<rating name="md_rating">
 			<pos>0.88 0.886</pos>
 			<size>0.05 0.03</size>
-		</text>
+		</rating>
 		<image name="logo">
-			<pos>0.72 0.08</pos>
-			<maxSize>0.24 0.16</maxSize>
+			<origin>0.5 0.5</origin>
+			<pos>0.83 0.35</pos>
+			<maxSize>0.30 0.30</maxSize>
+			<horizontalAlignment>true</horizontalAlignment>
+			<verticalAlignment>true</verticalAlignment>
 		</image>
 
 	</customView>
@@ -1448,10 +1408,10 @@ Tema proibido para uso comercial
 			<size>0.25 0</size>
 			<zIndex>36</zIndex>
 		</image>
-		<text name="md_rating">
+		<rating name="md_rating">
 			<pos>0.88 0.886</pos>
 			<size>0.05 0.03</size>
-		</text>
+		</rating>
 		<image name="logo">
 			<pos>0.72 0.08</pos>
 			<maxSize>0.24 0.16</maxSize>

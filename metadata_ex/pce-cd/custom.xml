@@ -48,11 +48,11 @@
 		</text>
 
 		<image name="logo" region="EN">
-			<path>./../assets/logos/tg-cd.png</path>
+			<path>./assets/logos/tg-cd.png</path>
 		</image>
 
 		<image name="logo" region="ES">
-			<path>./../assets/logos/tg-cd.png</path>
+			<path>./assets/logos/tg-cd.png</path>
 		</image>
 
 		<image name="sublogo" region="EN">
@@ -66,7 +66,7 @@
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
-			<path>./../assets/coinops/tg16.png</path>
+			<path>./assets/coinops/tg16.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
@@ -74,7 +74,7 @@
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">
-			<path>./../assets/coinops/tg16.png</path>
+			<path>./assets/coinops/tg16.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>

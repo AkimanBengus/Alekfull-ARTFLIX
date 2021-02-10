@@ -8,6 +8,7 @@
 			<pos>0.17 0.215</pos>
 			<maxSize>0.30 0.30</maxSize>
 			<zIndex>42</zIndex>
+			<visible>true</visible>
 		</image>
 
 		<text name="mdex_systemName" extra="true">

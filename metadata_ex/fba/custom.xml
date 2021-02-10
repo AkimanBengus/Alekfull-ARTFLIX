@@ -54,7 +54,7 @@
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
-			<path>./../assets/coinops/cps1.png</path>
+			<path>./assets/coinops/cps1.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
@@ -62,7 +62,7 @@
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">
-			<path>./../assets/coinops/cps1.png</path>
+			<path>./assets/coinops/cps1.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>

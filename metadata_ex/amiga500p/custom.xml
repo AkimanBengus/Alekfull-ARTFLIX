@@ -38,7 +38,7 @@
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
-			<path>./../assets/coinops/amiga.png</path>
+			<path>./assets/coinops/amiga.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
@@ -46,7 +46,7 @@
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">
-			<path>./../assets/coinops/amiga.png</path>
+			<path>./assets/coinops/amiga.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>

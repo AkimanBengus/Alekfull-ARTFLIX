@@ -48,11 +48,11 @@
 		</text>
 
 		<image name="logo" region="EN">
-			<path>./../assets/logos/tg-cd.png</path>
+			<path>./assets/logos/tg-cd.png</path>
 		</image>
 
 		<image name="logo" region="ES">
-			<path>./../assets/logos/tg-cd.png</path>
+			<path>./assets/logos/tg-cd.png</path>
 		</image>
 
 		<image name="sublogo" region="EN">

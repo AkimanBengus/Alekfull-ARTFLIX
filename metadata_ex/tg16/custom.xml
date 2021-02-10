@@ -49,11 +49,11 @@
 		</text>
 
 		<image name="logo" region="EN">
-			<path>./../assets/logos/tg16.png</path>
+			<path>./assets/logos/tg16.png</path>
 		</image>
 
 		<image name="logo" region="ES">
-			<path>./../assets/logos/tg16.png</path>
+			<path>./assets/logos/tg16.png</path>
 		</image>
 
 		<image name="sublogo" region="EN">

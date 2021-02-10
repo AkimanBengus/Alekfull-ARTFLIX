@@ -11,7 +11,7 @@
 	-->
 
 	<view name="system">
- 
+
 		<image name="backgroundSystem" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
@@ -38,23 +38,23 @@
 
 		<image name="logo">
 			<!-- try png -->
-			<path>./../assets/logos/$system.png</path>
+			<path>./assets/logos/$system.png</path>
 			<!-- try svg -->
-			<path>./../assets/logos/$system.svg</path>
+			<!-- <path>./assets/logos/$system.svg</path> -->
 			<!-- check if lang resources exist -->
-			<path>./../assets/logos/${system.theme}-${lang}.png</path>
-			<path>./../assets/logos/${system.theme}-${lang}.svg</path>
+			<path>./assets/logos/${system.theme}-${lang}.png</path>
+			<!-- <path>./assets/logos/${system.theme}-${lang}.svg</path> -->
 		</image>
 
 		<image name="logoHeader" extra="true">
 			<!-- <visible>false</visible> -->
 			<!-- try png -->
-			<path>./../assets/logos/$system.png</path>
+			<path>./assets/logos/$system.png</path>
 			<!-- try svg -->
-			<path>./../assets/logos/$system.svg</path>
+			<!-- <path>./assets/logos/$system.svg</path> -->
 			<!-- check if lang resources exist -->
-			<path>./../assets/logos/${system.theme}-${lang}.png</path>
-			<path>./../assets/logos/${system.theme}-${lang}.svg</path>
+			<path>./assets/logos/${system.theme}-${lang}.png</path>
+			<!-- <path>./assets/logos/${system.theme}-${lang}.svg</path> -->
 		</image>
 
 		<text name="logoText">
@@ -67,6 +67,22 @@
 			<glowSize>4</glowSize>
 			<forceUppercase>true</forceUppercase >
     	</text>
+
+		<text name="mdex_systemName" extra="true">
+			<text>${system.fullName}</text>
+			<fontPath>./../fonts/Circular Std Black.ttf</fontPath>
+			<color>FFFFFF</color>
+			<alignment>center</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontSize>0.08</fontSize>
+			<lineSpacing>1</lineSpacing>
+			<pos>0.020 0.065</pos>
+			<size>0.30 0.30</size>
+			<maxSize>0.30 0.30</maxSize>
+			<glowColor>00000016</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>42</zIndex>
+		</text>
 
 		<text name="mdex_systemYear" extra="true">
 			<fontPath>./../fonts/Circular Std Black.ttf</fontPath>
@@ -121,7 +137,7 @@
 		</text>
 
 		<text name="binding_totalGames" extra="true">
-			<text>{binding:total} Jeux</text>			
+			<text>{binding:total} Jeux</text>
 			<fontPath>./../fonts/Circular Std Book.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
