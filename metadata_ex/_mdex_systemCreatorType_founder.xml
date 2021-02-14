@@ -1,0 +1,13 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+		<text name="mdex_systemCreatorType" extra="true">
+			<text>FOUNDER:</text>
+			<text lang="fr">FONDATEUR:</text>
+			<text lang="es">FUNDADOR:</text>
+			<text lang="pt">FUNDADOR:</text>
+		</text>
+	</view>
+
+</theme>

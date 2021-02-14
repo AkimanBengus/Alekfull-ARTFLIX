@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<theme>
+﻿<theme>
 	<formatVersion>7</formatVersion>
 	<view name="screen">
 		<image name="crt" extra="true">
@@ -9,6 +8,7 @@
 			<color>FFFFFF90</color>
 			<tile>true</tile>
 		</image>
+
 		<ninepatch name="crt_border" extra="true" tinyScreen="false">
 			<pos>0 0</pos>
 			<size>1 1</size>
@@ -17,4 +17,5 @@
 			<cornerSize>32 32</cornerSize>
 		</ninepatch>
 	</view>
+
 </theme>

@@ -1,6 +1,5 @@
 <theme>
-	<formatVersion>4</formatVersion>
-
+	<formatVersion>7</formatVersion>
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
@@ -8,7 +7,6 @@
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
-
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">

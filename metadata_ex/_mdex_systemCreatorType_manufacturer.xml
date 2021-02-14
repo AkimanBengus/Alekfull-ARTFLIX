@@ -1,0 +1,13 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+		<text name="mdex_systemCreatorType" extra="true">
+			<text>MANUFACTURER:</text>
+			<text lang="fr">FABRICANT:</text>
+			<text lang="es">FABRICANTE:</text>
+			<text lang="pt">FABRICANTE:</text>
+		</text>
+	</view>
+
+</theme>

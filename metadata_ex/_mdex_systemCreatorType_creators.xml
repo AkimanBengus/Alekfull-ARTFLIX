@@ -1,0 +1,13 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+		<text name="mdex_systemCreatorType" extra="true">
+			<text>CREATORS:</text>
+			<text lang="fr">AUTEURS:</text>
+			<text lang="es">CREADORES:</text>
+			<text lang="pt">CRIADORES:</text>
+		</text>
+	</view>
+
+</theme>

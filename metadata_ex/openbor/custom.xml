@@ -1,25 +1,12 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>OpenBOR (Open Beats of Rage) é uma continuação de código aberto do mecanismo Beats of Rage. Embora o Beats of Rage pretendesse ser um jogo autônomo, o design modular dos elementos e do mecanismo dos jogos significava que os usuários finais podiam substituir assets.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="PTBR">
-			<text>OpenBOR (Open Beats of Rage) é uma continuação de código aberto do mecanismo Beats of Rage. Embora o Beats of Rage pretendesse ser um jogo autônomo, o design modular dos elementos e do mecanismo dos jogos significava que os usuários finais podiam substituir assets.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
 			<text>OpenBOR (Open Beats of Rage) is an open source continuation of the Beats of Rage engine. Although Beats of Rage was intended to be a stand alone game, the modular design of in game elements and engine meant end users were able to replace assets.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>OpenBOR es una continuación de código abierto del motor Beats of Rage. Aunque Beats of Rage estaba destinado a ser un juego independiente, el diseño modular de los elementos y el motor del juego significaba que los usuarios finales podían reemplazar los activos.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>OpenBOR (Open Beats of Rage) est une suite open source du moteur Beats of Rage. Bien que Beats of Rage ait été conçu pour être un jeu indépendant, la conception modulaire des éléments et du moteur de jeu a permis aux utilisateurs finaux de remplacer leurs actifs.</text>
+			<text lang="fr">OpenBOR (Open Beats of Rage) est une suite open source du moteur Beats of Rage. Bien que Beats of Rage ait été conçu pour être un jeu indépendant, la conception modulaire des éléments et du moteur de jeu a permis aux utilisateurs finaux de remplacer leurs actifs.</text>
+			<text lang="es">OpenBOR es una continuación de código abierto del motor Beats of Rage. Aunque Beats of Rage estaba destinado a ser un juego independiente, el diseño modular de los elementos y el motor del juego significaba que los usuarios finales podían reemplazar los activos.</text>
+			<text lang="pt">OpenBOR (Open Beats of Rage) é uma continuação de código aberto do mecanismo Beats of Rage. Embora o Beats of Rage pretendesse ser um jogo autônomo, o design modular dos elementos e do mecanismo dos jogos significava que os usuários finais podiam substituir assets.</text>
 		</text>
 
 		<text name="mdex_systemName" extra="true">
@@ -27,30 +14,16 @@
 		</text>
 
 		<text name="mdex_systemYear" extra="true">
-			<text>20XX</text>
+			<text></text>
 		</text>
 
 		<text name="mdex_systemCreator" extra="true">
 			<text>Senile Team</text>
 		</text>
 
-		<text name="mdex_systemCreatorType" extra="true">
-			<text>DESENVOLVEDOR:</text>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true"  region="PTBR">
-			<text>DESENVOLVEDOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="EN">
-			<text>DEVELOPER:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="ES">
-			<text>DESARROLLADOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="FR">
-			<text>DÉVELOPPEUR:</text>
-		</text>
 	</view>
+
+	<include>./../_mdex_systemCreatorType_developer.xml</include>
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
@@ -58,7 +31,6 @@
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
-
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">

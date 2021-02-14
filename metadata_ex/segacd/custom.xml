@@ -1,43 +1,22 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>Era um periférico que se ligava ao Mega Drive e disponibilizava assim a execução de jogos gravados em CD, novidade para a época. O acessório poderia ser acoplado a um 32X para alguns jogos.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="PTBR">
-			<text>Era um periférico que se ligava ao Mega Drive e disponibilizava assim a execução de jogos gravados em CD, novidade para a época. O acessório poderia ser acoplado a um 32X para alguns jogos.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
 			<text>The Sega CD, released as the Mega-CD in most regions outside North America and Brazil, is a CD-ROM accessory for the Sega Genesis video game console designed and produced by Sega.</text>
+			<text lang="fr">Sega Mega-CD est un périphérique destiné à la console de jeu vidéo Mega Drive de Sega. Il s'agit d'un lecteur de CD-ROM permettant de lire des jeux au format CD-ROM.</text>
+			<text lang="es">Sega Mega-CD es un periférico de hardware de la consola Sega Mega Drive producida por Sega. El Mega-CD fue el intento de Sega de hacer la competencia en Japón al CD de la PC Engine.</text>
+			<text lang="pt">Era um periférico que se ligava ao Mega Drive e disponibilizava assim a execução de jogos gravados em CD, novidade para a época. O acessório poderia ser acoplado a um 32X para alguns jogos.</text>
 		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>Sega Mega-CD es un periférico de hardware de la consola Sega Mega Drive producida por Sega. El Mega-CD fue el intento de Sega de hacer la competencia en Japón al CD de la PC Engine.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>Sega Mega-CD est un périphérique destiné à la console de jeu vidéo Mega Drive de Sega. Il s'agit d'un lecteur de CD-ROM permettant de lire des jeux au format CD-ROM.</text>
-		</text>
-
 
 		<text name="mdex_systemName" extra="true">
 			<text>Sega CD</text>
 		</text>
 
-		<text name="mdex_systemName" extra="true"  region="PTBR">
-			<text>Sega CD</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="EN">
-			<text>Sega CD</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="ES">
-			<text>Sega Mega-CD</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="FR">
-			<text>Sega Mega-CD</text>
+		<text name="mdex_systemName" extra="true">
+			<text region="eu">Sega Mega CD</text>
+			<text region="us">Sega CD</text>
+			<text region="jp">Sega Mega CD</text>
 		</text>
 
 		<text name="mdex_systemYear" extra="true">
@@ -48,20 +27,22 @@
 			<text>SEGA Corporation</text>
 		</text>
 
-		<image name="logo" region="ES">
-			<path>./assets/logos/segamegacd.png</path>
+		<image name="logo">
+			<path region="eu">./assets/logos/segamegacd.png</path>
+			<path region="us">./assets/logos/segacd.png</path>
+			<path region="jp">./assets/logos/segamegacd.png</path>
 		</image>
 
-		<image name="sublogo" region="ES">
-			<path>./assets/logos/segamegacd.png</path>
+		<image name="logoHeader">
+			<path region="eu">./assets/logos/segamegacd.png</path>
+			<path region="us">./assets/logos/segacd.png</path>
+			<path region="jp">./assets/logos/segamegacd.png</path>
 		</image>
 
-		<image name="logo" region="FR">
-			<path>./assets/logos/segamegacd.png</path>
-		</image>
-
-		<image name="sublogo" region="EN">
-			<path>./assets/logos/segamegacd.png</path>
+		<image name="backgroundSystem">
+			<path region="eu">${backgroundPath}/segacd.jpg</path>
+			<path region="us">${backgroundPath}/segacd.jpg</path>
+			<path region="jp">${backgroundPath}/segacd.jpg</path>
 		</image>
 	</view>
 
@@ -72,13 +53,11 @@
 		</image>
 	</customView>
 
-
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">
 			<path>./assets/coinops/megadrive.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
-
 
 </theme>

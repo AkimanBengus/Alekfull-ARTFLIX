@@ -1,53 +1,20 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>É um console de video game de 16 bits da Sega que concorria diretamente com o SNES. O console fez grande sucesso na década de 1990, perdendo espaço após o surgimento e popularização da nova geração de consoles.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="PTBR">
-			<text>É um console de video game de 16 bits da Sega que concorria diretamente com o SNES. O console fez grande sucesso na década de 1990, perdendo espaço após o surgimento e popularização da nova geração de consoles.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
 			<text>It is a 16-bit video game console from Sega that competed directly with the SNES. The console was very successful in the 1990s, losing ground after the emergence and popularization of the new generation of consoles.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>Es una consola de videojuego de 16 bits de Sega que compitió directamente con el SNES. La consola tuvo gran éxito en la década de 1990, perdiendo espacio después del surgimiento y popularización de la nueva generación de consolas.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>Il s’agit d’une console de jeux vidéo 16 bits de Sega qui est en concurrence directe avec la SNES. La console a connu un grand succès dans les années 90, perdant du terrain après l’émergence et la popularisation de la nouvelle génération de consoles.</text>
+			<text lang="fr">Il s’agit d’une console de jeux vidéo 16 bits de Sega qui est en concurrence directe avec la SNES. La console a connu un grand succès dans les années 90, perdant du terrain après l’émergence et la popularisation de la nouvelle génération de consoles.</text>
+			<text lang="es">Es una consola de videojuego de 16 bits de Sega que compitió directamente con el SNES. La consola tuvo gran éxito en la década de 1990, perdiendo espacio después del surgimiento y popularización de la nueva generación de consolas.</text>
+			<text lang="pt">É um console de video game de 16 bits da Sega que concorria diretamente com o SNES. O console fez grande sucesso na década de 1990, perdendo espaço após o surgimento e popularização da nova geração de consoles.</text>
 		</text>
 
 		<text name="mdex_systemName" extra="true">
-			<text>Sega Mega Drive</text>
+			<text region="eu">Sega Mega Drive</text>
+			<text region="us">Sega Genesis</text>
+			<text region="jp">Sega Mega Drive</text>
 		</text>
-		<text name="mdex_systemName" extra="true" region="EN">
-			<text>Sega Genesis</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="ES">
-			<text>Sega Mega Drive</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="FR">
-			<text>Sega Mega Drive</text>
-		</text>
-
-		<image name="logo" region="EN">
-			<path>./assets/logos/genesis.png</path>
-		</image>
-
-		<image name="logoHeader" region="EN">
-			<path>./assets/logos/genesis.png</path>
-		</image>
-
-		<image name="backgroundSystem" region="EN">
-			<path>${backgroundPath}/genesis.jpg</path>
-		</image>
-
-
+		
 		<text name="mdex_systemYear" extra="true">
 			<text>1988</text>
 		</text>
@@ -56,6 +23,41 @@
 			<text>SEGA Corporation</text>
 		</text>
 
+		<image name="logo">
+			<path region="eu">./assets/logos/megadrive.png</path>
+			<path region="us">./assets/logos/genesis.png</path>
+			<path region="jp">./assets/logos/megadrive-japan.png</path>
+		</image>
+
+		<image name="logoHeader">
+			<path region="eu">./assets/logos/megadrive.png</path>
+			<path region="us">./assets/logos/genesis.png</path>
+			<path region="jp">./assets/logos/megadrive-japan.png</path>
+		</image>
+
+		<image name="backgroundSystem">
+			<path region="eu">${backgroundPath}/megadrive.jpg</path>
+			<path region="us">${backgroundPath}/genesis.jpg</path>
+			<path region="jp">${backgroundPath}/megadrive-japan.jpg</path>
+		</image>
 	</view>
+
+	<customView name="HCoinSpin">
+		<image name="overlayCoinOps" extra="true">
+			<path region="eu">./assets/coinops/megadrive.png</path>
+			<path region="us">./assets/coinops/genesis.png</path>
+			<path region="jp">./assets/coinops/megadrive.png</path>
+			<zIndex>7</zIndex>
+		</image>
+	</customView>
+
+	<customView name="CoinOps Details">
+		<image name="overlayCoinOps" extra="true">
+			<path region="eu">./assets/coinops/megadrive.png</path>
+			<path region="us">./assets/coinops/genesis.png</path>
+			<path region="jp">./assets/coinops/megadrive.png</path>
+			<zIndex>7</zIndex>
+		</image>
+	</customView>
 
 </theme>

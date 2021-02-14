@@ -1,43 +1,18 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>É um console de videogame lançado em 1987 pela NEC e Hudson Soft. Após seu lançamento no Japão e sua aceitação nesse país, foi lançado em 1988 nos Estados Unidos batizado de Turbo Grafx-16.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="PTBR">
-			<text>É um console de videogame lançado em 1987 pela NEC e Hudson Soft. Após seu lançamento no Japão e sua aceitação nesse país, foi lançado em 1988 nos Estados Unidos batizado de Turbo Grafx-16.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
 			<text>TurboGrafx-16 (PC Engine) is a home video game console jointly developed by Hudson Soft and NEC Home Electronics, released in Japan on October 30, 1987 and in the United States on August 29, 1989.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>PC Engine es una videoconsola que fue lanzada primeramente en Japón por NEC el 30 de octubre de 1987. El sistema fue lanzado en el mercado norteamericano a finales de agosto de 1989 con el nombre de TurboGrafx-16.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>PC-Engine (PCエンジン, Piishii Enjin), connue sous le nom TurboGrafx-16 en Amérique du Nord, est une console de jeux vidéo 8 bits fabriquée par NEC Corporation et commercialisée à partir de 1987 au Japon.</text>
-		</text>
-
-
-		<text name="mdex_systemName" extra="true" region="PTBR">
-			<text>PC Engine</text>
+			<text lang="fr">PC-Engine (PCエンジン, Piishii Enjin), connue sous le nom TurboGrafx-16 en Amérique du Nord, est une console de jeux vidéo 8 bits fabriquée par NEC Corporation et commercialisée à partir de 1987 au Japon.</text>
+			<text lang="es">PC Engine es una videoconsola que fue lanzada primeramente en Japón por NEC el 30 de octubre de 1987. El sistema fue lanzado en el mercado norteamericano a finales de agosto de 1989 con el nombre de TurboGrafx-16.</text>
+			<text lang="pt">É um console de videogame lançado em 1987 pela NEC e Hudson Soft. Após seu lançamento no Japão e sua aceitação nesse país, foi lançado em 1988 nos Estados Unidos batizado de Turbo Grafx-16.</text>
 		</text>
 
 		<text name="mdex_systemName" extra="true">
-			<text>PC Engine</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="EN">
-			<text>TurboGrafx-16</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="ES">
-			<text>TurboGrafx-16</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="FR">
-			<text>PC Engine</text>
+			<text region="eu">PC Engine</text>
+			<text region="us">TurboGrafx-16</text>
+			<text region="jp">PC Engine</text>
 		</text>
 
 		<text name="mdex_systemYear" extra="true">
@@ -48,22 +23,35 @@
 			<text>NEC Home Electronics</text>
 		</text>
 
-		<image name="logo" region="EN">
-			<path>./assets/logos/tg16.png</path>
+		<image name="logo">
+			<path region="eu">./assets/logos/pcengine.png</path>
+			<path region="us">./assets/logos/tg16.png</path>
+			<path region="jp">./assets/logos/pcengine.png</path>
 		</image>
 
-		<image name="logo" region="ES">
-			<path>./assets/logos/tg16.png</path>
+		<image name="logoHeader">
+			<path region="eu">./assets/logos/pcengine.png</path>
+			<path region="us">./assets/logos/tg16.png</path>
+			<path region="jp">./assets/logos/pcengine.png</path>
 		</image>
-
-		<image name="sublogo" region="EN">
-			<path>./assets/logos/tg16.png</path>
-		</image>
-
-		<image name="sublogo" region="ES">
-			<path>./assets/logos/tg16.png</path>
-		</image>
-
 	</view>
+
+	<customView name="HCoinSpin">
+		<image name="overlayCoinOps" extra="true">
+			<path region="eu">./assets/coinops/pcengine.png</path>
+			<path region="us">./assets/coinops/tg16.png</path>
+			<path region="jp">./assets/coinops/pcengine.png</path>
+			<zIndex>7</zIndex>
+		</image>
+	</customView>
+
+	<customView name="CoinOps Details">
+		<image name="overlayCoinOps" extra="true">
+			<path region="eu">./assets/coinops/pcengine.png</path>
+			<path region="us">./assets/coinops/tg16.png</path>
+			<path region="jp">./assets/coinops/pcengine.png</path>
+			<zIndex>7</zIndex>
+		</image>
+	</customView>
 
 </theme>

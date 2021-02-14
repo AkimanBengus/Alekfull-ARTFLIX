@@ -1,26 +1,14 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>O ResidualVM foi originalmente projetado para jogar jogos de aventura da LucasArts que usam o mecanismo de jogo GrimE. Em 26 de maio de 2009, o ResidualVM foi adaptado para suportar vários mecanismos. O mecanismo Sprint da Presto Studios agora também é recriado no ResidualVM.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="PTBR">
-			<text>O ResidualVM foi originalmente projetado para jogar jogos de aventura da LucasArts que usam o mecanismo de jogo GrimE. Em 26 de maio de 2009, o ResidualVM foi adaptado para suportar vários mecanismos. O mecanismo Sprint da Presto Studios agora também é recriado no ResidualVM.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
 			<text>ResidualVM was originally designed to play LucasArts adventure games that use the GrimE game engine. On May 26, 2009, ResidualVM was adapted so that it could support multiple engines. The Sprint engine from Presto Studios is now recreated in ResidualVM as well.</text>
+			<text lang="fr">ResidualVM a été initialement conçu pour jouer aux jeux d'aventure LucasArts qui utilisent le moteur de jeu GrimE. Le 2009, ResidualVM a été adapté pour pouvoir prendre en charge plusieurs moteurs. Le moteur Sprint de Presto Studios est désormais également recréé dans.</text>
+			<text lang="es">ResidualVM fue originalmente diseñado para jugar juegos de aventura LucasArts que usan el motor de juego GrimE. El 26 de mayo de 2009, ResidualVM se adaptó para que pudiera admitir múltiples motores. El motor Sprint de Presto Studios ahora también se recrea en ResidualVM.</text>
+			<text lang="pt">O ResidualVM foi originalmente projetado para jogar jogos de aventura da LucasArts que usam o mecanismo de jogo GrimE. Em 26 de maio de 2009, o ResidualVM foi adaptado para suportar vários mecanismos. O mecanismo Sprint da Presto Studios agora também é recriado no ResidualVM.</text>
 		</text>
 
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>ResidualVM fue originalmente diseñado para jugar juegos de aventura LucasArts que usan el motor de juego GrimE. El 26 de mayo de 2009, ResidualVM se adaptó para que pudiera admitir múltiples motores. El motor Sprint de Presto Studios ahora también se recrea en ResidualVM.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>ResidualVM a été initialement conçu pour jouer aux jeux d'aventure LucasArts qui utilisent le moteur de jeu GrimE. Le 2009, ResidualVM a été adapté pour pouvoir prendre en charge plusieurs moteurs. Le moteur Sprint de Presto Studios est désormais également recréé dans.</text>
-		</text>
 		<text name="mdex_systemName" extra="true">
 			<text>ResidualVM</text>
 		</text>
@@ -32,23 +20,10 @@
 		<text name="mdex_systemCreator" extra="true">
 			<text>James Brown</text>
 		</text>
-		<text name="mdex_systemCreatorType" extra="true">
-			<text>DESENVOLVEDOR:</text>
-		</text>
 
-		<text name="mdex_systemCreatorType" extra="true"  region="PTBR">
-			<text>DESENVOLVEDOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="EN">
-			<text>DEVELOPER:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="ES">
-			<text>DESARROLLADOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="FR">
-			<text>DÉVELOPPEUR:</text>
-		</text>
 	</view>
+
+	<include>./../_mdex_systemCreatorType_developer.xml</include>
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
@@ -56,7 +31,6 @@
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
-
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">

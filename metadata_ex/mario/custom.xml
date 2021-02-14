@@ -1,25 +1,12 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>Mario é uma franquia de mídia, publicada e produzida pela Nintendo, estrelando o personagem Mario. É uma franquia de videogame, com outras formas de mídia , incluindo várias séries de televisão e um longa-metragem.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="PTBR">
-			<text>Mario é uma franquia de mídia, publicada e produzida pela Nintendo, estrelando o personagem Mario. É uma franquia de videogame, com outras formas de mídia , incluindo várias séries de televisão e um longa-metragem.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
 			<text>Mario is a media franchise, published and produced by Nintendo, starring the fictional Italian character Mario. It is primarily a video game franchise, with the franchise's other forms of media including several television series and a feature film.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>Mario es una franquicia de medios, publicada y producida por Nintendo, protagonizada por el personaje Mario. Es principalmente una franquicia de videojuegos, con otras formas de medios de la franquicia que incluyen varias series de televisión y una película.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>Mario est une franchise média, publiée et produite par Nintendo, avec le personnage Mario. Il s'agit principalement d'une franchise de jeux vidéo, avec les autres formes de médias de la franchise, notamment plusieurs séries télévisées et un long métrage.</text>
+			<text lang="fr">Mario est une franchise média, publiée et produite par Nintendo, avec le personnage Mario. Il s'agit principalement d'une franchise de jeux vidéo, avec les autres formes de médias de la franchise, notamment plusieurs séries télévisées et un long métrage.</text>
+			<text lang="es">Mario es una franquicia de medios, publicada y producida por Nintendo, protagonizada por el personaje Mario. Es principalmente una franquicia de videojuegos, con otras formas de medios de la franquicia que incluyen varias series de televisión y una película.</text>
+			<text lang="pt">Mario é uma franquia de mídia, publicada e produzida pela Nintendo, estrelando o personagem Mario. É uma franquia de videogame, com outras formas de mídia , incluindo várias séries de televisão e um longa-metragem.</text>
 		</text>
 
 		<text name="mdex_systemName" extra="true">
@@ -34,23 +21,9 @@
 			<text>Shigeru Miyamoto</text>
 		</text>
 
-		<text name="mdex_systemCreatorType" extra="true">
-			<text>DESENVOLVEDOR:</text>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true"  region="PTBR">
-			<text>DESENVOLVEDOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="EN">
-			<text>DEVELOPER:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="ES">
-			<text>DESARROLLADOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="FR">
-			<text>DÉVELOPPEUR:</text>
-		</text>
 	</view>
+
+	<include>./../_mdex_systemCreatorType_developer.xml</include>
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
@@ -58,7 +31,6 @@
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
-
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">

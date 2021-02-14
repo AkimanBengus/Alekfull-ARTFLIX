@@ -12,15 +12,21 @@ Tema proibido para uso comercial
 <theme defaultView="CoinOps Details">
 	<formatVersion>7</formatVersion>
 
+	<include subset="region" name="eu" displayName="Europe"></include>
+	<include subset="region" name="us" displayName="USA"></include>
+	<include subset="region" name="jp" displayName="Japan"></include>
+
 	<!-- To Translate -->
 	<include subset="screenType" name="Full HD 1080p">./systemview/screenTypeFullHD.xml</include>
 	<include subset="screenType" name="HD 720p">./systemview/screenTypeHD.xml</include>
 	<include subset="screenType" name="Lite 540p">./systemview/screenTypeLite.xml</include>
 
+	<include>./systemview/systemview.xml</include>
+
 	<include subset="carouselStyle" name="Horizontal" displayName="Horizontal">./systemview/systemview_carousel_horizontal.xml</include>
 	<include subset="carouselStyle" name="Vertical" displayName="Vertical">./systemview/systemview_carousel_vertical.xml</include>
 	<include subset="carouselStyle" name="Vertical Wheel" displayName="Vertical Wheel">./systemview/systemview_carousel_vertical_wheel.xml</include>
-	
+
 	<include subset="headerStyle" name="System Logo" displayName="System Logo">./systemview/systemview_header_logo.xml</include>
 	<include subset="headerStyle" name="System Name" displayName="System Name">./systemview/systemview_header_text.xml</include>
 
@@ -75,10 +81,8 @@ Tema proibido para uso comercial
 	<include subset="iconset" name="XBox">./iconsets/xbox.xml</include>
 	<include subset="iconset" name="Xbox One">./iconsets/xboxone.xml</include>
 	<include subset="iconset" name="Switch">./iconsets/switch.xml</include>
-	<include subset="iconset" name="ARCADE">./iconsets/arcade.xml</include>
+	<include subset="iconset" name="Arcade">./iconsets/arcade.xml</include>
 
- 
-	<include>./systemview/systemview.xml</include>
 	<include>./metadata_ex/$system/custom.xml</include>
 
 
@@ -369,9 +373,6 @@ Tema proibido para uso comercial
 			<path>./assets/logos/$system.png</path>
 			<!-- try svg -->
 			<!-- <path>./assets/logos/$system.svg</path> -->
-			<!-- check if lang resources exist -->
-			<path>./assets/logos/${system.theme}-${lang}.png</path>
-			<!-- <path>./assets/logos/${system.theme}-${lang}.svg</path> -->
 			<pos>0.02 0.12</pos>
 			<maxSize>0.34 0.16</maxSize>
 			<origin>0 0</origin>

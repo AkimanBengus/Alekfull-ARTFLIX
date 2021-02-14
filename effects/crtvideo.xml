@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
+
 	<view name="system">
 		<video name="tv_effect" extra="true">
 			<pos>0 0</pos>
@@ -9,6 +9,5 @@
 			<color>A0A0A007</color>
 		</video>
 	</view>
-
 
 </theme>

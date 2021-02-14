@@ -9,6 +9,7 @@
 		- name: ${system.name}         ex: nes
 		- theme: ${system.theme}       ex: nes
 	-->
+	<include>./../metadata_ex/_mdex_systemCreatorType_manufacturer.xml</include>
 
 	<view name="system">
 
@@ -41,31 +42,22 @@
 			<path>./assets/logos/$system.png</path>
 			<!-- try svg -->
 			<!-- <path>./assets/logos/$system.svg</path> -->
-			<!-- check if lang resources exist -->
-			<path>./assets/logos/${system.theme}-${lang}.png</path>
-			<!-- <path>./assets/logos/${system.theme}-${lang}.svg</path> -->
 		</image>
 
 		<image name="logoHeader" extra="true">
-			<!-- <visible>false</visible> -->
 			<!-- try png -->
 			<path>./assets/logos/$system.png</path>
 			<!-- try svg -->
-			<!-- <path>./assets/logos/$system.svg</path> -->
-			<!-- check if lang resources exist -->
-			<path>./assets/logos/${system.theme}-${lang}.png</path>
-			<!-- <path>./assets/logos/${system.theme}-${lang}.svg</path> -->
 		</image>
 
 		<text name="logoText">
 			<fontPath>./../fonts/Circular Std Black.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
-			<fontSize>0.08</fontSize>
+			<fontSize>0.06</fontSize>
 			<lineSpacing>1</lineSpacing>
 			<glowColor>00000016</glowColor>
-			<glowSize>4</glowSize>
-			<forceUppercase>true</forceUppercase >
+			<glowSize>2.5</glowSize>
     	</text>
 
 		<text name="mdex_systemName" extra="true">
@@ -74,13 +66,13 @@
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
 			<verticalAlignment>center</verticalAlignment>
-			<fontSize>0.08</fontSize>
+			<fontSize>0.075</fontSize>
 			<lineSpacing>1</lineSpacing>
 			<pos>0.020 0.065</pos>
 			<size>0.30 0.30</size>
 			<maxSize>0.30 0.30</maxSize>
 			<glowColor>00000016</glowColor>
-			<glowSize>2</glowSize>
+			<glowSize>2.5</glowSize>
 			<zIndex>42</zIndex>
 		</text>
 
@@ -137,7 +129,10 @@
 		</text>
 
 		<text name="binding_totalGames" extra="true">
-			<text>{binding:total} Jeux</text>
+			<text>{binding:total} Games</text>
+			<text lang="fr">{binding:total} Jeux</text>
+			<text lang="es">{binding:total} Juegos</text>
+			<text lang="pt">{binding:total} Jogos</text>
 			<fontPath>./../fonts/Circular Std Book.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
@@ -164,26 +159,6 @@
 
 		<text name="systemInfo">
 			<visible>false</visible>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true">
-			<text>FABRICANTE:</text>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true" region="PTBR">
-			<text>FABRICANTE:</text>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true" region="EN">
-			<text>MANUFACTURER:</text>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true" region="ES">
-			<text>FABRICANTE:</text>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true" region="FR">
-			<text>FABRICANT:</text>
 		</text>
 
 	</view>

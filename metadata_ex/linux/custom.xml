@@ -1,25 +1,12 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>Linux é um termo popularmente empregado para se referir a sistemas operacionais que utilizam o Kernel Linux. O kernel foi desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true"  region="PTBR">
-			<text>Linux é um termo popularmente empregado para se referir a sistemas operacionais que utilizam o Kernel Linux. O kernel foi desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
 			<text>Linux is a family of open source Unix-like operating systems based on the Linux kernel,an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>Linux es una familia de sistemas operativos de código abierto tipo Unix basados ​​en el núcleo de Linux, un núcleo del sistema operativo lanzado por Linus Torvalds. Linux generalmente está empaquetado en una distribución de Linux.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>Linux est une famille de systèmes d'exploitation open source de type Unix basés sur le noyau Linux, un noyau de système d'exploitation publié pour Linus Torvalds. Linux est généralement conditionné dans une distribution Linux.</text>
+			<text lang="fr">Linux est une famille de systèmes d'exploitation open source de type Unix basés sur le noyau Linux, un noyau de système d'exploitation publié pour Linus Torvalds. Linux est généralement conditionné dans une distribution Linux.</text>
+			<text lang="es">Linux es una familia de sistemas operativos de código abierto tipo Unix basados ​​en el núcleo de Linux, un núcleo del sistema operativo lanzado por Linus Torvalds. Linux generalmente está empaquetado en una distribución de Linux.</text>
+			<text lang="pt">Linux é um termo popularmente empregado para se referir a sistemas operacionais que utilizam o Kernel Linux. O kernel foi desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix.</text>
 		</text>
 
 		<text name="mdex_systemName" extra="true">
@@ -34,23 +21,9 @@
 			<text>Linus Torvalds</text>
 		</text>
 
-		<text name="mdex_systemCreatorType" extra="true">
-			<text>DESENVOLVEDOR:</text>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true"  region="PTBR">
-			<text>DESENVOLVEDOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="EN">
-			<text>DEVELOPER:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="ES">
-			<text>DESARROLLADOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="FR">
-			<text>DÉVELOPPEUR:</text>
-		</text>
 	</view>
+
+	<include>./../_mdex_systemCreatorType_developer.xml</include>
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
@@ -58,7 +31,6 @@
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
-
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">

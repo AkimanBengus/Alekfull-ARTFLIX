@@ -1,25 +1,12 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>O NEC PC-8801 foi um computador pessoal, fabricado pela Nippon Electric Company e lançado em 1981, era baseado em no processador 8 bits Zilog Z80.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="PTBR">
-			<text>O NEC PC-8801 foi um computador pessoal, fabricado pela Nippon Electric Company e lançado em 1981, era baseado em no processador 8 bits Zilog Z80.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
 			<text>The NEC PC-8801 was a personal computer, manufactured by Nippon Electric Company and released in 1981, was based on the Zilog Z80 8-bit processor.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>El NEC PC-8801 era una computadora personal, fabricada por Nippon Electric Company y lanzada en 1981, basada en el procesador Zilog Z80 de 8 bits.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>Le NEC PC-8801 était un ordinateur personnel, fabriqué par Nippon Electric Company et commercialisé en 1981, basé sur le processeur Zilog Z80 à 8 bits.</text>
+			<text lang="fr">Le NEC PC-8801 était un ordinateur personnel, fabriqué par Nippon Electric Company et commercialisé en 1981, basé sur le processeur Zilog Z80 à 8 bits.</text>
+			<text lang="es">El NEC PC-8801 era una computadora personal, fabricada por Nippon Electric Company y lanzada en 1981, basada en el procesador Zilog Z80 de 8 bits.</text>
+			<text lang="pt">O NEC PC-8801 foi um computador pessoal, fabricado pela Nippon Electric Company e lançado em 1981, era baseado em no processador 8 bits Zilog Z80.</text>
 		</text>
 
 		<text name="mdex_systemName" extra="true">
@@ -42,11 +29,11 @@
 		</image>
 	</customView>
 
-
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">
 			<path>./assets/coinops/coinpc.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
+
 </theme>

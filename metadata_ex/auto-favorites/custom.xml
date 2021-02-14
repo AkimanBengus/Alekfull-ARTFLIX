@@ -1,81 +1,44 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>Encontre todos os seus jogos favoritos em um único sistema. Toda vez que marcar um jogo como favorito em um sistema, você o encontrará aqui. Aproveite!</text>
+			<text>Find all your favorites games in a single system. Every time you mark a game as favorites in a system, you will find it here. Enjoy !</text>
+			<text lang="fr">Trouvez tous vos jeux favoris dans un seul système. Chaque fois que vous marquez un jeu comme favori dans un système, vous le trouverez ici. Profite !</text>
+			<text lang="es">Encuentra todos tus juegos favoritos en un solo sistema. Cada vez que marques un juego como favorito en un sistema, lo encontrarás aquí. ¡Disfruta !</text>
+			<text lang="pt">Encontre todos os seus jogos favoritos em um único sistema. Toda vez que marcar um jogo como favorito em um sistema, você o encontrará aqui. Aproveite !</text>
 		</text>
 
-		<text name="mdex_systemDescription" extra="true"  region="PTBR">
-			<text>Encontre todos os seus jogos favoritos em um único sistema. Toda vez que marcar um jogo como favorito em um sistema, você o encontrará aqui. Aproveite!</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
-			<text>Find all your favorites games in a single system. Every time you mark a game as favorites in a system, you will find it here. Enjoy!</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>Encuentra todos tus juegos favoritos en un solo sistema. Cada vez que marques un juego como favorito en un sistema, lo encontrarás aquí. Disfruta!</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>Trouvez tous vos jeux favoris dans un seul système. Chaque fois que vous marquez un jeu comme favori dans un système, vous le trouverez ici. Prendre plaisir !</text>
-		</text>
 		<text name="mdex_systemName" extra="true">
-			<text>Favoritos</text>
-		</text>
-
-		<text name="mdex_systemName" extra="true"  region="PTBR">
-			<text>Favoritos</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="EN">
 			<text>Favorites</text>
+			<text lang="fr">Favoris</text>
+			<text lang="es">Favoritos</text>
+			<text lang="pt">Favoritos</text>
 		</text>
-		<text name="mdex_systemName" extra="true" region="ES">
-			<text>Favoritos</text>
-		</text>
-		<text name="mdex_systemName" extra="true" region="FR">
-			<text>Favoris</text>
-		</text>
-
 
 		<text name="mdex_systemYear" extra="true">
-			<text>20XX</text>
+			<text></text>
 		</text>
 
 		<text name="mdex_systemCreator" extra="true">
 			<text></text>
 		</text>
 
-		<image name="logo" region="EN">
-			<path>./assets/logos/auto-favorites-en.png</path>
-		</image>
-
-		<image name="sublogo" region="EN">
-			<path>./assets/logos/auto-favorites-en.png</path>
-		</image>
-
-
-		<image name="logo" region="ES">
-			<path>./assets/logos/auto-favorites-es.png</path>
-		</image>
-
-		<image name="sublogo" region="ES">
-			<path>./assets/logos/auto-favorites-es.png</path>
-		</image>
-
-
-		<image name="logo" region="FR">
-			<path>./assets/logos/auto-favorites-fr.png</path>
-		</image>
-
-		<image name="sublogo" region="FR">
-			<path>./assets/logos/auto-favorites-fr.png</path>
-		</image>
-
 		<text name="mdex_systemCreatorType" extra="true">
-			<text>ALEKFULL ARTFLIX</text>
+			<text></text>
 		</text>
+
+		<image name="logo">
+			<path>./assets/logos/auto-favorites.png</path>
+			<path lang="fr">./assets/logos/auto-favorites-fr.png</path>
+			<path lang="es">./assets/logos/auto-favorites-es.png</path>
+		</image>
+
+		<image name="logoHeader" extra="true">
+			<path>./assets/logos/auto-favorites.png</path>
+			<path lang="fr">./assets/logos/auto-favorites-fr.png</path>
+			<path lang="es">./assets/logos/auto-favorites-es.png</path>
+		</image>
 	</view>
 
 	<customView name="HCoinSpin">
@@ -85,11 +48,11 @@
 		</image>
 	</customView>
 
-
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">
 			<path>./assets/coinops/default.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
+
 </theme>

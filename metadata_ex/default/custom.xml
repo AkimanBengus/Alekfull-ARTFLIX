@@ -1,11 +1,11 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemName" extra="true">
 			<visible>true</visible>
 		</text>
-		
+
 		<text name="mdex_systemCreatorType" extra="true">
 			<visible>false</visible>
 		</text>
@@ -34,7 +34,6 @@
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
-
 
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">

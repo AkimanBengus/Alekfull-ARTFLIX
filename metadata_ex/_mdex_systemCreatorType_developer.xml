@@ -1,0 +1,13 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+		<text name="mdex_systemCreatorType" extra="true">
+			<text>DEVELOPER:</text>
+			<text lang="fr">DÉVELOPPEUR:</text>
+			<text lang="es">DESARROLLADOR:</text>
+			<text lang="pt">DESENVOLVEDOR:</text>
+		</text>
+	</view>
+
+</theme>

@@ -1,25 +1,12 @@
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="system">
 		<text name="mdex_systemDescription" extra="true">
-			<text>FB NEO é um emulador de código aberto das placas Capcom modelos CPS-1, 2 e 3, além de outras placas de arcade como a do SNK Neo-Geo, Toaplan, Cave e várias outras.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true"  region="PTBR">
-			<text>FB NEO é um emulador de código aberto das placas Capcom modelos CPS-1, 2 e 3, além de outras placas de arcade como a do SNK Neo-Geo, Toaplan, Cave e várias outras.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="EN">
 			<text>FB NEO is an open-source project and it is programmed by a group of people known as the FBA Team. FB Alpha is based on the original FinalBurn by Dave.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="ES">
-			<text>FB NEO es un proyecto de código abierto y está programado por un grupo de personas conocido como el Equipo FBA. FB Alpha está basado en el FinalBurn original de Dave.</text>
-		</text>
-
-		<text name="mdex_systemDescription" extra="true" region="FR">
-			<text>FB NEO est un émulateur de jeu vidéo d'arcade basé sur l'émulateur Final Burn, qui émule différents systèmes tel que le MVS, le CPS1 et CPS2, le System 16, System 18, X Board, Y Board de Sega, etc.</text>
+			<text lang="fr">FB NEO est un émulateur de jeu vidéo d'arcade basé sur l'émulateur Final Burn, qui émule différents systèmes tel que le MVS, le CPS1 et CPS2, le System 16, System 18, X Board, Y Board de Sega, etc.</text>
+			<text lang="es">FB NEO es un proyecto de código abierto y está programado por un grupo de personas conocido como el Equipo FBA. FB Alpha está basado en el FinalBurn original de Dave.</text>
+			<text lang="pt">FB NEO é um emulador de código aberto das placas Capcom modelos CPS-1, 2 e 3, além de outras placas de arcade como a do SNK Neo-Geo, Toaplan, Cave e várias outras.</text>
 		</text>
 
 		<text name="mdex_systemName" extra="true">
@@ -27,30 +14,16 @@
 		</text>
 
 		<text name="mdex_systemYear" extra="true">
-			<text>20XX</text>
+			<text></text>
 		</text>
 
 		<text name="mdex_systemCreator" extra="true">
 			<text>FinalBurn NEO Team</text>
 		</text>
 
-		<text name="mdex_systemCreatorType" extra="true">
-			<text>DESENVOLVEDOR:</text>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true"  region="PTBR">
-			<text>DESENVOLVEDOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="EN">
-			<text>DEVELOPER:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="ES">
-			<text>DESARROLLADOR:</text>
-		</text>
-		<text name="mdex_systemCreatorType" extra="true" region="FR">
-			<text>DÉVELOPPEUR:</text>
-		</text>
 	</view>
+
+	<include>./../_mdex_systemCreatorType_developer.xml</include>
 
 	<customView name="HCoinSpin">
 		<image name="overlayCoinOps" extra="true">
@@ -59,11 +32,11 @@
 		</image>
 	</customView>
 
-
 	<customView name="CoinOps Details">
 		<image name="overlayCoinOps" extra="true">
 			<path>./assets/coinops/coinops.png</path>
 			<zIndex>7</zIndex>
 		</image>
 	</customView>
+
 </theme>
