@@ -29,36 +29,17 @@
 			<path region="jp">./assets/logos/pcenginecd.png</path>
 		</image>
 
-		<image name="logoHeader">
+		<image name="logoHeader" extra="true">
 			<path region="eu">./assets/logos/pcenginecd.png</path>
 			<path region="us">./assets/logos/tg16cd.png</path>
 			<path region="jp">./assets/logos/pcenginecd.png</path>
 		</image>
 
-		<image name="backgroundSystem">
+		<image name="backgroundSystem" extra="true">
 			<path region="eu">${backgroundPath}/pcenginecd.jpg</path>
 			<path region="us">${backgroundPath}/tg16cd.jpg</path>
 			<path region="jp">${backgroundPath}/pcenginecd.jpg</path>
 		</image>
-
 	</view>
-
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path region="eu">./assets/coinops/pcenginecd.png</path>
-			<path region="us">./assets/coinops/pcenginecd.png</path>
-			<path region="jp">./assets/coinops/pcenginecd.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path region="eu">./assets/coinops/pcenginecd.png</path>
-			<path region="us">./assets/coinops/pcenginecd.png</path>
-			<path region="jp">./assets/coinops/pcenginecd.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
 
 </theme>

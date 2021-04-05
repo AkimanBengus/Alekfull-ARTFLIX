@@ -1,0 +1,26 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+		<text name="mdex_systemDescription" extra="true">
+			<text></text>
+		</text>
+
+		<text name="mdex_systemName" extra="true">
+			<text>${system.fullName}</text>
+		</text>
+		
+		<text name="mdex_systemCreatorType" extra="true">
+			<text></text>
+		</text>
+
+		<text name="mdex_systemYear" extra="true">
+			<text>${system.releaseYearOrNull}</text>
+		</text>
+
+		<text name="mdex_systemCreator" extra="true">
+			<text></text>
+		</text>
+
+	</view>
+</theme>

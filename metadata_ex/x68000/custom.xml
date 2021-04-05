@@ -12,6 +12,7 @@
 		<text name="mdex_systemName" extra="true">
 			<text>Sharp X68000</text>
 		</text>
+    
 		<text name="mdex_systemYear" extra="true">
 			<text>1987</text>
 		</text>
@@ -21,18 +22,6 @@
 		</text>
 	</view>
 
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/coinopstv.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/coinopstv.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
+	<include>./../_mdex_systemCreatorType_manufacturer.xml</include>
 
 </theme>

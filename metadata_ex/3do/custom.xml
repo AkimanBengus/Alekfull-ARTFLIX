@@ -20,6 +20,8 @@
 		<text name="mdex_systemCreator" extra="true">
 			<text>Panasonic, Sanyo, GoldStar</text>
 		</text>
-
 	</view>
+
+	<include>./../_mdex_systemCreatorType_manufacturer.xml</include>
+
 </theme>

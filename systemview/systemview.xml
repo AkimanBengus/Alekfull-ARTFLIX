@@ -2,35 +2,39 @@
 	<formatVersion>4</formatVersion>
 
 	<!--
-		- $system (use only one type per text tag)
+		- $system (use only one type per text tag, sometimes it contains default)
+		  if one include or link is found with default in place of $system
+		  the $system variable become "default" it is in the theme.xml it contains default
 
 		Variables from es_systems.cfg
-		- fullname: ${system.fullname} ex: Nintendo Entertainment System
+		- full name: ${system.fullName} ex: Nintendo Entertainment System
 		- name: ${system.name}         ex: nes
 		- theme: ${system.theme}       ex: nes
 	-->
-	<include>./../metadata_ex/_mdex_systemCreatorType_manufacturer.xml</include>
 
 	<view name="system">
 
-		<image name="backgroundSystem" extra="true">
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<origin>0 0</origin>
-			<path>./assets/arts/default.jpg</path>
-			<path>${backgroundPath}/$system.jpg</path>
+		<image name="backgroundSystem" extra="static">
+			<!--
+				Full height, keep aspect on width and right alignment
+				origin 1 0
+				pos 1 0
+				size 0 1
+			-->
+			<!-- Full height, keep aspect on width and horizontal center image -->
+			<origin>0.5 0</origin>
+			<pos>0.5 0</pos>
+			<size>0 1</size>
 		</image>
 
 		<image name="backgroundOverlay" extra="true">
-			<origin>0 0</origin>
 			<pos>0 0</pos>
-			<size>1 1</size>
+			<size>0 1</size>
 			<path>./assets/backgroundOverlayLeftShadow.png</path>
 			<zIndex>40</zIndex>
 		</image>
 
 		<image name="backgroundOverlayButton" extra="true">
-			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<path>./assets/backgroundOverlayTotalGamesButton.png</path>
@@ -38,16 +42,12 @@
 		</image>
 
 		<image name="logo">
-			<!-- try png -->
-			<path>./assets/logos/$system.png</path>
-			<!-- try svg -->
-			<!-- <path>./assets/logos/$system.svg</path> -->
+			<path>./assets/logos/${system.theme}.png</path>
 		</image>
 
 		<image name="logoHeader" extra="true">
-			<!-- try png -->
-			<path>./assets/logos/$system.png</path>
-			<!-- try svg -->
+			<path>./assets/logos/${system.theme}.png</path>
+			<visible>false</visible>
 		</image>
 
 		<text name="logoText">
@@ -66,11 +66,10 @@
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
 			<verticalAlignment>center</verticalAlignment>
-			<fontSize>0.075</fontSize>
+			<fontSize>0.06</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<pos>0.020 0.065</pos>
-			<size>0.30 0.30</size>
-			<maxSize>0.30 0.30</maxSize>
+			<pos>0.0 0.065</pos>
+			<size>0.32 0.20</size>
 			<glowColor>00000016</glowColor>
 			<glowSize>2.5</glowSize>
 			<zIndex>42</zIndex>
@@ -82,7 +81,7 @@
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<pos>0.020 0.378</pos>
+			<pos>0.020 0.278</pos>
 			<size>0.35 0</size>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
@@ -95,7 +94,7 @@
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<pos>0.078 0.378</pos>
+			<pos>0.078 0.278</pos>
 			<size>0.35 0</size>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
@@ -104,11 +103,11 @@
 
 		<text name="mdex_systemCreator" extra="true">
 			<fontPath>./../fonts/Circular Std Book.ttf</fontPath>
-			<color>5c5b5c</color>
+			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<pos>0.195 0.378</pos>
+			<pos>0.195 0.278</pos>
 			<size>0.35 0</size>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
@@ -121,7 +120,7 @@
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<pos>0.02 0.4</pos>
+			<pos>0.02 0.305</pos>
 			<size>0.30 0</size>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
@@ -151,7 +150,9 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.17 0.76</pos>
 			<maxSize>0.30 0.30</maxSize>
-			<delay>0.3</delay>
+			<delay>0.2</delay>
+			<effect>none</effect>
+			<roundCorners>0.02</roundCorners>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>50</zIndex>

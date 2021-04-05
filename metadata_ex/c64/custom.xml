@@ -21,4 +21,7 @@
 			<text>Commodore Business Machines</text>
 		</text>
 	</view>
+
+	<include>./../_mdex_systemCreatorType_manufacturer.xml</include>
+
 </theme>

@@ -18,10 +18,8 @@
 		</text>
 
 		<text name="mdex_systemCreator" extra="true">
-			<text>Various</text>
+			<text></text>
 		</text>
-
 	</view>
 
-	<include>./../_mdex_systemCreatorType_developer.xml</include>
 </theme>

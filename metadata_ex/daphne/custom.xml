@@ -20,8 +20,8 @@
 		<text name="mdex_systemCreator" extra="true">
 			<text>Matt Ownby</text>
 		</text>
-
 	</view>
 
 	<include>./../_mdex_systemCreatorType_developer.xml</include>
+
 </theme>

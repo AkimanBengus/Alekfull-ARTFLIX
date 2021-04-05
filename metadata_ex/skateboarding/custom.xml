@@ -12,32 +12,6 @@
 		<text name="mdex_systemName" extra="true">
 			<text>Skate Games</text>
 		</text>
-
-		<text name="mdex_systemYear" extra="true">
-			<text>19XX</text>
-		</text>
-
-		<text name="mdex_systemCreator" extra="true">
-			<text></text>
-		</text>
-
-		<text name="mdex_systemCreatorType" extra="true">
-			<text></text>
-		</text>
 	</view>
-
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/default.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/default.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
 
 </theme>

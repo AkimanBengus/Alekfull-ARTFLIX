@@ -13,27 +13,9 @@
 			<text>Arcade</text>
 		</text>
 
-		<text name="mdex_systemYear" extra="true">
-			<text>19XX</text>
-		</text>
-
 		<text name="mdex_systemCreator" extra="true">
-			<text>Various</text>
+			<text></text>
 		</text>
 	</view>
-
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/coinops.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/coinops.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
 
 </theme>

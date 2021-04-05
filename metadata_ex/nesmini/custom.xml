@@ -22,18 +22,6 @@
 		</text>
 	</view>
 
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/nes.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/nes.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
+	<include>./../_mdex_systemCreatorType_manufacturer.xml</include>
 
 </theme>

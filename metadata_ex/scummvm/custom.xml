@@ -23,18 +23,4 @@
 
 	<include>./../_mdex_systemCreatorType_developer.xml</include>
 
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/coinpc.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/coinpc.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
 </theme>

@@ -20,8 +20,6 @@
 		<text name="mdex_systemCreator" extra="true">
 			<text></text>
 		</text>
-		<text name="mdex_systemCreatorType" extra="true">
-			<text></text>
-		</text>
 	</view>
+
 </theme>

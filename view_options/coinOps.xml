@@ -1,20 +1,13 @@
 <theme>
 	<formatVersion>7</formatVersion>
 
-	<customView name="HCoinSpin">
+	<customView name="HCoinSpin, CoinOps Details">
 		<image name="overlayCoinOps" extra="true">
 			<path>./assets/coinops/default.png</path>
-			<path>./assets/coinops/$system.png</path>
-			<zIndex>7</zIndex>
+			<path>./assets/coinops/${system.theme}.png</path>
 		</image>
 	</customView>
 
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/default.png</path>
-			<path>./assets/coinops/$system.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
+	<include>./coinops/${system.theme}.xml</include>
 
 </theme>

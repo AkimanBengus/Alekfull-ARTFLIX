@@ -13,7 +13,7 @@
 		</image>
 
 		<image name="backgroundOverlay" extra="true">
-			<color>FFFFFF30</color>
+			<color>FFFFFFF0</color>
 		</image>
 
 	</view>

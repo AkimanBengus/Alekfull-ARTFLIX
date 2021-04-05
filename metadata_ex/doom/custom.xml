@@ -18,22 +18,10 @@
 		</text>
 
 		<text name="mdex_systemCreator" extra="true">
-			<text>Various</text>
+			<text></text>
 		</text>
 	</view>
 
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/coinpc.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/coinpc.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
+	<include>./../_mdex_systemCreatorType_manufacturer.xml</include>
 
 </theme>

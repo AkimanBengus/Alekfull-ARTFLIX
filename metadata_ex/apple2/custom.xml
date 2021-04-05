@@ -21,4 +21,7 @@
 			<text>Apple Computer, Inc.</text>
 		</text>
 	</view>
+
+	<include>./../_mdex_systemCreatorType_manufacturer.xml</include>
+
 </theme>

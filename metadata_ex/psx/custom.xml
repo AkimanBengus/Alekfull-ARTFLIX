@@ -20,10 +20,8 @@
 		<text name="mdex_systemCreator" extra="true">
 			<text>Sony Computer Entertainment</text>
 		</text>
-
-		<text name="mdex_systemName" extra="true">
-			<pos>0.02 0.08</pos>
-		</text>
-
 	</view>
+
+	<include>./../_mdex_systemCreatorType_manufacturer.xml</include>
+
 </theme>

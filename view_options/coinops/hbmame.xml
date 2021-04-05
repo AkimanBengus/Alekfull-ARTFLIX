@@ -1,0 +1,17 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<customView name="HCoinSpin">
+		<image name="overlayCoinOps" extra="true">
+			<path>./assets/coinops/model2.png</path>
+		</image>
+	</customView>
+
+	<customView name="CoinOps Details">
+		<image name="overlayCoinOps" extra="true">
+			<path>./assets/coinops/model2.png</path>
+		</image>
+	</customView>
+
+
+</theme>

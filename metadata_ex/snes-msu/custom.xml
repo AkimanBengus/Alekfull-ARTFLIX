@@ -14,27 +14,14 @@
 		</text>
 
 		<text name="mdex_systemYear" extra="true">
-			<text>19XX</text>
+			<text>2010</text>
 		</text>
 
 		<text name="mdex_systemCreator" extra="true">
-			<text>Various</text>
+			<text>Nintendo</text>
 		</text>
 	</view>
 
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/snes.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/snes.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
+	<include>./../_mdex_systemCreatorType_manufacturer.xml</include>
 
 </theme>

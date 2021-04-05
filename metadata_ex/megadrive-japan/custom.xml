@@ -20,7 +20,8 @@
 		<text name="mdex_systemCreator" extra="true">
 			<text>SEGA Corporation</text>
 		</text>
-
 	</view>
+
+	<include>./../_mdex_systemCreatorType_manufacturer.xml</include>
 
 </theme>

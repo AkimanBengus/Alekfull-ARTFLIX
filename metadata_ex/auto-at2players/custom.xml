@@ -43,18 +43,4 @@
 		</image>
 	</view>
 
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/default.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/default.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
 </theme>

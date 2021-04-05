@@ -12,6 +12,18 @@ Tema proibido para uso comercial
 <theme defaultView="CoinOps Details">
 	<formatVersion>7</formatVersion>
 
+	<variables>
+		<subset.region>Region</subset.region>
+		<subset.screenType>Screen Type</subset.screenType>
+		<subset.headerStyle>Header Style</subset.headerStyle>
+		<subset.carouselStyle>Carousel Style</subset.carouselStyle>
+		<subset.mainBackgroundColor>Main Background Color</subset.mainBackgroundColor>
+		<subset.colorset>Menu Color</subset.colorset>
+		<subset.coinOpsDefault>CoinOps Default System</subset.coinOpsDefault>
+		<subset.tveffect>TV Effect CoinOps View</subset.tveffect>
+		<subset.showTopMarquee>Show Top Marquee in CoinOps Views</subset.showTopMarquee>
+	</variables>
+
 	<include subset="region" name="eu" displayName="Europe"></include>
 	<include subset="region" name="us" displayName="USA"></include>
 	<include subset="region" name="jp" displayName="Japan"></include>
@@ -22,10 +34,12 @@ Tema proibido para uso comercial
 	<include subset="screenType" name="Lite 540p">./systemview/screenTypeLite.xml</include>
 
 	<include>./systemview/systemview.xml</include>
+	<include>./metadata_ex/default.xml</include>
+	<include>./metadata_ex/${system.theme}/custom.xml</include>
 
-	<include subset="carouselStyle" name="Horizontal" displayName="Horizontal">./systemview/systemview_carousel_horizontal.xml</include>
-	<include subset="carouselStyle" name="Vertical" displayName="Vertical">./systemview/systemview_carousel_vertical.xml</include>
 	<include subset="carouselStyle" name="Vertical Wheel" displayName="Vertical Wheel">./systemview/systemview_carousel_vertical_wheel.xml</include>
+	<include subset="carouselStyle" name="Vertical" displayName="Vertical">./systemview/systemview_carousel_vertical.xml</include>
+	<include subset="carouselStyle" name="Horizontal" displayName="Horizontal">./systemview/systemview_carousel_horizontal.xml</include>
 
 	<include subset="headerStyle" name="System Logo" displayName="System Logo">./systemview/systemview_header_logo.xml</include>
 	<include subset="headerStyle" name="System Name" displayName="System Name">./systemview/systemview_header_text.xml</include>
@@ -34,7 +48,7 @@ Tema proibido para uso comercial
 	<include subset="music" name="On" displayName="${sysmusic}">./sounds.xml</include>
 	<include subset="music" name="Off" displayName="${nomusic}"/>
 
-	<include subset="mainBackgroundColor" name="Gray" displayName="${gray}"/>
+	<include subset="mainBackgroundColor" name="Dark" displayName="${dark}"/>
 	<include subset="mainBackgroundColor" name="Green" displayName="${green}">./systemview/background_colors/green.xml</include>
 	<include subset="mainBackgroundColor" name="Red" displayName="${red}">./systemview/background_colors/red.xml</include>
 	<include subset="mainBackgroundColor" name="Blue" displayName="${blue}">./systemview/background_colors/blue.xml</include>
@@ -60,7 +74,7 @@ Tema proibido para uso comercial
 	<include subset="showTopMarquee" name="Yes" displayName="${yes}" appliesTo="HCoinSpin, CoinOps Details">./view_options/wmarquee.xml</include>
 	<include subset="showTopMarquee" name="No" displayName="${no}" appliesTo="HCoinSpin, CoinOps Details">./view_options/nmarquee.xml</include>
 
-	<include subset="coinOpsDefault" name="Default" displayName="${default}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOps.xml</include>
+	<include subset="coinOpsDefault" name="Auto" displayName="Auto" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOps.xml</include>
 	<include subset="coinOpsDefault" name="TV Only" displayName="${coinOpsTV}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOpsTV.xml</include>
 	<include subset="coinOpsDefault" name="Arcade Only" displayName="${coinOpsArcade}" appliesTo="HCoinSpin, CoinOps Details">./view_options/coinOpsArcade.xml</include>
 
@@ -83,19 +97,6 @@ Tema proibido para uso comercial
 	<include subset="iconset" name="Switch">./iconsets/switch.xml</include>
 	<include subset="iconset" name="Arcade">./iconsets/arcade.xml</include>
 
-	<include>./metadata_ex/$system/custom.xml</include>
-
-
-	<variables>
-		<subset.mainBackgroundColor>Main Background Color</subset.mainBackgroundColor>
-		<subset.coinOpsDefault>CoinOps Default System</subset.coinOpsDefault>
-		<subset.tveffect>TV Effect CoinOps View</subset.tveffect>
-		<subset.showTopMarquee>Show Top Marquee in CoinOps Views</subset.showTopMarquee>
-		<subset.screenType>Screen Type</subset.screenType>
-		<subset.headerStyle>Header Style</subset.headerStyle>
-		<subset.carouselStyle>Carousel Style</subset.carouselStyle>
-		<subset.colorset>Menu Color</subset.colorset>
-	</variables>
 
 	<variables>
 		<baseColor>8b0000</baseColor>
@@ -140,6 +141,7 @@ Tema proibido para uso comercial
 		<nomusic>Aleatorias</nomusic>
 		<silence>Sem Musicas de Fundo</silence>
 		<default>Padrao</default>
+		<dark>Sombrio</dark>
 		<green>Verde</green>
 		<red>Vermelho</red>
 		<blue>Azul</blue>
@@ -185,6 +187,7 @@ Tema proibido para uso comercial
 		<nomusic>Aléatoire</nomusic>
 		<silence>Sans musique de fond</silence>
 		<default>Standard</default>
+		<dark>Sombre</dark>
 		<green>Vert</green>
 		<red>Rouge</red>
 		<blue>Bleu</blue>
@@ -229,6 +232,7 @@ Tema proibido para uso comercial
 		<nomusic>Aleatoro</nomusic>
 		<silence>Sin Musica de Fondo</silence>
 		<default>Estandar</default>
+		<dark>Oscuro</dark>
 		<green>Rojo</green>
 		<red>Vermelho</red>
 		<blue>Azul</blue>
@@ -367,24 +371,40 @@ Tema proibido para uso comercial
 		</helpsystem>
 	</view>
 
+	<view name="system, grid">
+		<image name="BottomBar" extra="static">
+			<tile>false</tile>
+			<pos>0 1</pos>
+			<size>1 0.060</size>
+			<origin>0 1</origin>
+			<path>./assets/bottom.png</path>
+			<color>${bottomBarColor}</color>
+			<zIndex>50</zIndex>
+		</image>
+	</view>
+
+	<view name="system, grid">
+		<image name="backgroundSystem" extra="static">
+			<path>./assets/arts/default.jpg</path>
+			<path>${backgroundPath}/${system.theme}.jpg</path>
+		</image>
+	</view>
+
 	<view name="grid">
 		<image name="logo">
-			<!-- try png -->
-			<path>./assets/logos/$system.png</path>
-			<!-- try svg -->
-			<!-- <path>./assets/logos/$system.svg</path> -->
-			<pos>0.02 0.12</pos>
-			<maxSize>0.34 0.16</maxSize>
-			<origin>0 0</origin>
-			<zIndex>4</zIndex>
+			<path>./assets/logos/${system.theme}.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.17 0.165</pos>
+			<maxSize>0.30 0.20</maxSize>
+			<zIndex>50</zIndex>
 		</image>
 
 		<image name="backgroundSystem" extra="true">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./assets/arts/default.jpg</path>
-			<path>${backgroundPath}/$system.jpg</path>
+			<!-- Full height, keep aspect on width and horizontal center image -->
+			<origin>0.5 0</origin>
+			<pos>0.5 0</pos>
+			<size>0 1</size>
+			<color>606060FF</color>
 			<zIndex>2</zIndex>
 		</image>
 
@@ -467,7 +487,7 @@ Tema proibido para uso comercial
 
 		<imagegrid name="gamegrid">
 			<pos>0.72 0</pos>
-			<size>0.3 1</size>
+			<size>0.3 0.94</size>
 			<scrollDirection>vertical</scrollDirection>
 			<autoLayout>1 7</autoLayout>
 			<autoLayoutSelectedZoom>1.30</autoLayoutSelectedZoom>
@@ -479,12 +499,12 @@ Tema proibido para uso comercial
 
 		<text name="md_developer">
 			<fontPath>./fonts/Circular Std Book.ttf</fontPath>
-			<color>5c5b5c</color>
+			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<size>0.21 0.03</size>
-			<pos>0.195 0.374</pos>
+			<pos>0.195 0.278</pos>
+			<size>0.35 0</size>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
 			<zIndex>42</zIndex>
@@ -496,8 +516,8 @@ Tema proibido para uso comercial
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
 			<lineSpacing>1</lineSpacing>
+			<pos>0.078 0.278</pos>
 			<size>0.35 0</size>
-			<pos>0.078 0.378</pos>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
 			<zIndex>42</zIndex>
@@ -510,8 +530,8 @@ Tema proibido para uso comercial
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<size>0.04 0.03</size>
-			<pos>0.029 0.374</pos>
+			<pos>0.020 0.278</pos>
+			<size>0.35 0</size>
 			<zIndex>42</zIndex>
 			<format>%Y</format>
 		</datetime>
@@ -524,71 +544,86 @@ Tema proibido para uso comercial
 			<imageColor>FFFFFFAA</imageColor>
 			<reflexion>0.11 0.0</reflexion>
 		</gridtile>
+
 		<gridtile name="selected">
 			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
 			<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
 			<padding>64 16</padding>
 		</gridtile>
+
 		<text name="gridtile">
 			<color>80808080</color>
 			<fontSize>0.016</fontSize>
 			<size>1 0</size>
 		</text>
+
 		<text name="gridtile_selected">
 			<color>FFFFFF00</color>
 			<fontSize>0.035</fontSize>
 			<size>1 0</size>
 		</text>
+
 		<image name="backgroundOverlay" extra="true">
-			<origin>0 0</origin>
 			<pos>0 0</pos>
-			<size>1 1</size>
+			<size>0 1</size>
 			<path>./assets/backgroundOverlayLeftShadow.png</path>
 			<zIndex>6</zIndex>
 		</image>
+		
+		<image name="backgroundOverlayButton" extra="true">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./assets/backgroundOverlayTotalGamesButton.png</path>
+			<zIndex>7</zIndex>
+		</image>
+
 		<text name="md_description">
 			<fontPath>./fonts/Circular Std Book.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.023</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<size>0.35 0.0925</size>
-			<pos>0.025 0.4</pos>
+			<pos>0.02 0.305</pos>
+			<size>0.30 0.24</size>
 			<glowColor>00000016</glowColor>
 			<glowSize>1</glowSize>
 			<zIndex>42</zIndex>
 		</text>
+
 		<video name="md_video">
-			<pos>0.025 0.62</pos>
-			<minSize>0.30 0.30</minSize>
-			<origin>0 0</origin>
+			<origin>0.5 0.5</origin>
+			<pos>0.17 0.76</pos>
+			<maxSize>0.30 0.30</maxSize>
 			<delay>0.2</delay>
+			<effect>none</effect>
+			<roundCorners>0.02</roundCorners>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>6</zIndex>
 		</video>
 
 		<image name="logo">
-			<pos>0.152 0.74</pos>
-			<maxSize>0.4 0.126</maxSize>
-			<origin>0 0</origin>
-			<zIndex>0</zIndex>
+			<visible>false</visible>
 		</image>
 
 		<image name="md_marquee">
-			<pos>0.155 0.22</pos>
-			<maxSize>0.24 0.26</maxSize>
+			<origin>0 0</origin>
+			<pos>0.02 0.065</pos>
+			<size>0.30 0.20</size>
+			<maxSize>0.30 0.20</maxSize>
 			<zIndex>36</zIndex>
+			<backgroundColor>40FF9FDF</backgroundColor>
 		</image>
 
 		<text name="md_genre">
-			<pos>0.1515 0.5291</pos>
+			<origin>0.5 0.5</origin>
+			<pos>0.17 0.575</pos>
+			<size>0.35 0.045</size>
 			<alignment>center</alignment>
 			<fontPath>./fonts/Circular Std Black.ttf</fontPath>
 			<fontSize>0.0138</fontSize>
 			<color>FFFFFF</color>
 			<zIndex>42</zIndex>
-			<size>0.08 0.03</size>
 			<forceUppercase>true</forceUppercase>
 		</text>
 
@@ -621,7 +656,7 @@ Tema proibido para uso comercial
 
 		<imagegrid name="gamegrid">
 			<pos>0.72 0</pos>
-			<size>0.3 1</size>
+			<size>0.3 0.94</size>
 			<scrollDirection>vertical</scrollDirection>
 			<autoLayout>1 7</autoLayout>
 			<autoLayoutSelectedZoom>1.30</autoLayoutSelectedZoom>
@@ -670,20 +705,19 @@ Tema proibido para uso comercial
 			<alignment>left</alignment>
 		</text>
 		<video name="md_video">
+			<origin>0 0</origin>
 			<pos>0.025 0.62</pos>
 			<minSize>0.30 0.30</minSize>
-			<origin>0 0</origin>
 			<delay>0.2</delay>
+			<effect>none</effect>
+			<roundCorners>0.02</roundCorners>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>6</zIndex>
 		</video>
 
 		<image name="logo">
-			<pos>0.152 0.74</pos>
-			<maxSize>0.4 0.126</maxSize>
-			<origin>0 0</origin>
-			<zIndex>0</zIndex>
+			<visible>false</visible>
 		</image>
 
 		<image name="md_marquee">
@@ -700,7 +734,7 @@ Tema proibido para uso comercial
 		</rating>
 
 		<image name="md_image">
-			<zIndex>4</zIndex>
+			<zIndex>0</zIndex>
 		</image>
 
 		<text name="md_publisher">
@@ -717,7 +751,7 @@ Tema proibido para uso comercial
 
 		<imagegrid name="gamegrid">
 			<pos>0.72 0</pos>
-			<size>0.3 1</size>
+			<size>0.3 0.94</size>
 			<scrollDirection>vertical</scrollDirection>
 			<autoLayout>1 7</autoLayout>
 			<autoLayoutSelectedZoom>1.30</autoLayoutSelectedZoom>
@@ -766,10 +800,12 @@ Tema proibido para uso comercial
 		</image>
 
 		<video name="md_video">
+			<origin>0 0</origin>
 			<pos>0.106 0.30</pos>
 			<size>0.365 0.48</size>
-			<origin>0 0</origin>
 			<delay>0</delay>
+			<effect>none</effect>
+			<roundCorners>0.02</roundCorners>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>5</zIndex>
@@ -787,11 +823,6 @@ Tema proibido para uso comercial
 			<pos>0.285 0.1</pos>
 			<maxSize>0.25 0.15</maxSize>
 		</image>
-
-		<!-- Hide Help System -->
-		<helpsystem name="help">
-			<pos>2 0.96</pos>
-		</helpsystem>
 	</customView>
 
 	<customView name="CoinOps Details" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
@@ -896,14 +927,16 @@ Tema proibido para uso comercial
 			<path>./assets/filter3.png</path>
 			<pos>0.106 0.22</pos>
 			<size>0.365 0.48</size>
-			<zIndex>5</zIndex>
+			<zIndex>55</zIndex>
 		</image>
 
 		<video name="md_video">
+			<origin>0 0</origin>
 			<pos>0.106 0.22</pos>
 			<size>0.365 0.48</size>
-			<origin>0 0</origin>
 			<delay>0.2</delay>
+			<effect>none</effect>
+			<roundCorners>0.02</roundCorners>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>5</zIndex>
@@ -922,6 +955,10 @@ Tema proibido para uso comercial
 			<maxSize>0.22 0.12</maxSize>
 		</image>
 
+		<image name="BottomBar" extra="static">
+			<visible>false</visible>
+		</image>
+
 		<!-- Hide Help System -->
 		<helpsystem name="help">
 		 	<pos>2 0.96</pos>
@@ -930,15 +967,20 @@ Tema proibido para uso comercial
 
 	<customView name="Pegasus OS" inherits="grid" tinyScreen="false" displayName="${pegasusViewName}">
 		<image name="md_thumbnail">
-			<pos>0.188 0.60</pos>
-			<size>0.25 0</size>
+			<origin>0.5 1</origin>
+			<pos>0.155 0.94</pos>
+			<maxSize>0.30 0.40</maxSize>
 			<zIndex>36</zIndex>
 		</image>
 
 		<text name="md_name">
-			<pos>0.325 0.54</pos>
-			<size>0.65 0.05</size>
-			<fontSize>0.050</fontSize>
+			<origin>0 1</origin>
+			<pos>0.315 0.715</pos>
+			<size>0.68 0</size>
+			<!-- <pos>0.315 0.62</pos>
+			<size>0.68 0</size> -->
+			<fontSize>0.05</fontSize>
+			<lineSpacing>1</lineSpacing>
 			<color>FFFFFF</color>
 			<glowColor>00000016</glowColor>
 			<glowSize>2</glowSize>
@@ -948,8 +990,8 @@ Tema proibido para uso comercial
 		</text>
 
 		<text name="md_description">
-			<pos>0.325 0.68</pos>
-			<size>0.63 0.185</size>
+			<pos>0.315 0.76</pos>
+			<size>0.68 0.184</size>
 			<fontSize>0.024</fontSize>
 			<color>FFFFFF</color>
 			<glowColor>00000016</glowColor>
@@ -960,8 +1002,9 @@ Tema proibido para uso comercial
 		</text>
 
 		<text name="md_developer">
-			<pos>0.325 0.60</pos>
-			<size>0.62 0.102</size>
+			<origin>0 0</origin>
+			<pos>0.315 0.72</pos>
+			<size>0.62 0.03</size>
 			<fontSize>0.024</fontSize>
 			<color>539ac8</color>
 			<glowColor>00000016</glowColor>
@@ -969,6 +1012,15 @@ Tema proibido para uso comercial
 			<fontPath>./fonts/Circular Std Book.ttf</fontPath>
 			<alignment>left</alignment>
 		</text>
+
+		<rating name="md_rating">
+			<origin>0 0</origin>
+			<pos>0.895 0.72</pos>
+			<size>0.10 0.03</size>
+			<color>FFFFFF</color>
+			<unfilledColor>808080</unfilledColor>
+			<horizontalAlignment>right</horizontalAlignment>
+		</rating>
 
 		<imagegrid name="gamegrid">
 			<pos>0.72 -0.04</pos>
@@ -982,6 +1034,7 @@ Tema proibido para uso comercial
 			<imageSource>marquee</imageSource>
 			<zIndex>6</zIndex>
 		</imagegrid>
+
 		<gridtile name="default">
 			<padding>64 16</padding>
 			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
@@ -990,6 +1043,7 @@ Tema proibido para uso comercial
 			<imageColor>FFFFFFAA</imageColor>
 			<reflexion>0.11 0.0</reflexion>
 		</gridtile>
+
 		<gridtile name="selected">
 			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
 			<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
@@ -1019,10 +1073,11 @@ Tema proibido para uso comercial
 
 		<video name="md_video">
 			<color>606060FF</color>
+			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<origin>0 0</origin>
 			<delay>0.3</delay>
+			<effect>none</effect>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>5</zIndex>
@@ -1041,11 +1096,6 @@ Tema proibido para uso comercial
 			<maxSize>0.22 0.12</maxSize>
 			<zIndex>0</zIndex>
 		</image>
-
-		<!-- Hide Help System -->
-		<helpsystem name="help">
-			<pos>2 0.96</pos>
-		</helpsystem>
 	</customView>
 
 	<customView name="NFlix (Static)" inherits="grid" tinyScreen="false" displayName="${nflixViewName}">
@@ -1386,9 +1436,9 @@ Tema proibido para uso comercial
 			<fontSize>0.025</fontSize>
 		</text>
 		<video name="md_video">
+			<origin>0.5 0.5</origin>
 			<pos>0.73 0.275</pos>
 			<maxSize>0.40 0.40</maxSize>
-			<origin>0.5 0.5</origin>
 			<delay>0.2</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>

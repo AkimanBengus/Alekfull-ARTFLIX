@@ -12,31 +12,6 @@
 		<text name="mdex_systemName" extra="true">
 			<text>Setup</text>
 		</text>
-
-		<text name="mdex_systemYear" extra="true">
-			<text></text>
-		</text>
-
-		<text name="mdex_systemCreator" extra="true">
-			<text>Various</text>
-		</text>
-
 	</view>
-
-	<include>./../_mdex_systemCreatorType_developer.xml</include>
-
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/default.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/default.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
 
 </theme>

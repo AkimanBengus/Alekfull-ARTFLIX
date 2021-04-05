@@ -33,31 +33,17 @@
 			<path region="jp">./assets/logos/segamegacd.png</path>
 		</image>
 
-		<image name="logoHeader">
+		<image name="logoHeader" extra="true">
 			<path region="eu">./assets/logos/segamegacd.png</path>
 			<path region="us">./assets/logos/segacd.png</path>
 			<path region="jp">./assets/logos/segamegacd.png</path>
 		</image>
 
-		<image name="backgroundSystem">
+		<image name="backgroundSystem" extra="true">
 			<path region="eu">${backgroundPath}/segacd.jpg</path>
 			<path region="us">${backgroundPath}/segacd.jpg</path>
 			<path region="jp">${backgroundPath}/segacd.jpg</path>
 		</image>
 	</view>
-
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/megadrive.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/megadrive.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
 
 </theme>

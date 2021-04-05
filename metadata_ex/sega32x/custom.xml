@@ -29,26 +29,11 @@
 			<path region="jp">./assets/logos/sega32x-japan.png</path>
 		</image>
 
-		<image name="logoHeader">
+		<image name="logoHeader" extra="true">
 			<path region="eu">./assets/logos/sega32x.png</path>
 			<path region="us">./assets/logos/sega32x-us.png</path>
 			<path region="jp">./assets/logos/sega32x-japan.png</path>
 		</image>
 	</view>
-
-	<customView name="HCoinSpin">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/megadrive.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
-	<customView name="CoinOps Details">
-		<image name="overlayCoinOps" extra="true">
-			<path>./assets/coinops/megadrive.png</path>
-			<zIndex>7</zIndex>
-		</image>
-	</customView>
-
 
 </theme>
